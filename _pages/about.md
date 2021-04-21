@@ -17,6 +17,7 @@ but also in the MIC and CAI community.
 These models combine the advanced deep neural networks with classical
 density estimation (either explicit or implicit) for achieving state-of-the-art
 results.
+
 Using GANs for sample synthesis could potentially be used to address the
 shortage of large and diverse annotated databases.
 In addition, the concept of two networks that are optimized in an adversarial
@@ -27,10 +28,12 @@ image analysis applications such as denoising, reconstruction, segmentation,
 and detection.
 Moreover, adversarial training has led to new applications in paradigms
 such as semi-supervised learning and abnormality detection.
+
 While GAN is the most popular among the deep generative models, explicit
 density modeling by VAE has seen a recent surge of latent space disentanglement
 in medical imaging literature.
 VAEs can also be exploited successfully for semi-supervised learning.
+
 Apart from that, interesting novel applications of GANs in the CAI community
 were published in the last two years at MICCAI, e.g. for increasing
 the realism in surgical training, for providing additional ground truth in
@@ -40,15 +43,15 @@ some form of generative modeling.
 MICCAI 2020 main conference had two dedicated sessions on GAN.
 We can expect a rise in the submitted papers on generative modeling to
 MICCAI 2021.
+
 While the conference will not be able to accept a significant number of these
 papers in the main track, the authors of close to threshold papers can still
 incorporate the suggestions from the reviewers and submit in our workshop.
 With the rise of deep generative models for both Medical Image Computing and
 Computer Assisted Intervention, we believe our workshop and the associated
-AdaptOR challenge (https://adaptor2021.github.io/) will be instrumental to
-develop a
-sub-community within MICCAI for focused discussion on generative modeling in
-both MIC and CAI.
+[AdaptOR challenge](https://adaptor2021.github.io/) will be instrumental to
+develop a sub-community within MICCAI for focused discussion on generative
+modeling in both MIC and CAI.
 
 
 
