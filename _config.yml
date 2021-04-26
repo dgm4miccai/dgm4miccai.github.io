@@ -70,7 +70,7 @@ social:
 # Site Author
 author:
   name             : "DGM4MICCAI Workshop"
-  avatar           : "profile.png"
+  avatar           : #"profile.png"
   bio              :
   location         :
   employer         :
