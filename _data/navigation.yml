@@ -1,4 +1,8 @@
 # main links links
 main:
-  - title: "None"
-    url: /none/
+  - title: "Start"
+    url: /
+  - title: "Timeline"
+    url: /#timeline
+  - title: "Program"
+    url: /#program
