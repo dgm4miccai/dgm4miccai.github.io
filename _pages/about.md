@@ -23,7 +23,7 @@ We seek contributions that include, but are not limited to:
 - Segmentation, Detection, Synthesis, Reconstruction, Denoising, Supersampling, Registration
 - Image-to-Image translation for Synthetic Training Data Generation or Augmented Reality
 
-We particularly welcome the papers driven by the theme "MIC meets CAI".
+We particularly welcome papers driven by the theme "MIC meets CAI".
 Interesting novel applications of deep generative models in MIC and CAI beyond these topics are also welcome.
 
 
@@ -67,7 +67,7 @@ All times are given in UTC time.
 
 
 ## Program Committee ##
-- Li Wang, Assistant Professor, University of Texas at Arlington, USA
+- Li Wang, University of Texas at Arlington, USA
 - Tong Zhang , PCL, China
 - Ping Lu, Oxford University, UK
 - Roxane Licandro, Medical University of Vienna, Austria
