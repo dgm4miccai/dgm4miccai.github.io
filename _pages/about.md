@@ -27,6 +27,21 @@ We particularly welcome the papers driven by the theme "MIC meets CAI".
 Interesting novel applications of deep generative models in MIC and CAI beyond these topics are also welcome.
 
 
+## Timeline ##
+
+|                         | Date           |
+|-------------------------|----------------|
+| Paper Submission        | 25. June 2021  |
+| Review Deadline         | 09. July 2021  |
+| Review Release          | 11. July 2021  |
+| Rebuttal Due            | 14. July 2021  |
+| Final Decision          | 16. July 2021  |
+| Camera Ready Papers Due | 30. July 2021  |
+| Proceeding              | 06. July 2021  |
+| Workshop Date 1         | 27. Sept. 2021 |
+| Workshop Date 2         | 01. Oct. 2021  |
+
+
 ## Program ##
 
 
@@ -45,9 +60,27 @@ All times are given in UTC time.
 
 
 ## Keynote Speakers ##
-
+- Andreas Maier, Pattern Recognition Lab, FAU Nürnberg, Germany
+- Stefanie Speidel, Translational Surgical Oncology, NCT Dresden, Germany
 
 ## Organizing Committee ##
+- Sandy Engelhardt, Heidelberg University, Germany
+- Ilkay Oksuz, Istanbul Technical University, Turkey
+- Dajiang Zhu, University of Texas, USA
+- Yixuan Yuan, City University of Hong Kong, China
+- Anirban Mukhopadhyay, Technische Universität Darmstadt, Germany
 
 
 ## Program Committee ##
+- Li Wang, Assistant Professor, University of Texas at Arlington, USA
+- Tong Zhang , PCL, China
+- Ping Lu, Oxford University, UK
+- Roxane Licandro, Medical University of Vienna, Austria
+- Chen Qin, University of Edinburgh, UK
+- Veronika Zimmer, TU Muenchen, Germany
+- Dwarikanath Mahapatra, Inception Institute of AI, UAE
+- Michael Sdika, CREATIS Lyon, France
+- Jelmer Wolterink, Univ. of Twente, The Netherlands
+- Alejandro Granados, King's College London, UK
+- Liang Zhan, University of Pittsburgh, USA
+- Jinglei Lv, The University of Sydney, Australia
