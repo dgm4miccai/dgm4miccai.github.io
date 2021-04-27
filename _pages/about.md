@@ -32,14 +32,9 @@ Interesting novel applications of deep generative models in MIC and CAI beyond t
 |                         | Date           |
 |-------------------------|----------------|
 | Paper Submission        | 25. June 2021  |
-| Review Deadline         | 09. July 2021  |
 | Review Release          | 11. July 2021  |
 | Rebuttal Due            | 14. July 2021  |
 | Final Decision          | 16. July 2021  |
-| Camera Ready Papers Due | 30. July 2021  |
-| Proceeding              | 06. July 2021  |
-| Workshop Date 1         | 27. Sept. 2021 |
-| Workshop Date 2         | 01. Oct. 2021  |
 
 
 ## Program ##
