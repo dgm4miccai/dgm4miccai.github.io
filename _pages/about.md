@@ -68,7 +68,7 @@ All times are given in UTC time.
 
 ## Program Committee ##
 - Li Wang, University of Texas at Arlington, USA
-- Tong Zhang , PCL, China
+- Tong Zhang , Peng Cheng Laboratory, Shenzhen, China
 - Ping Lu, Oxford University, UK
 - Roxane Licandro, Medical University of Vienna, Austria
 - Chen Qin, University of Edinburgh, UK
