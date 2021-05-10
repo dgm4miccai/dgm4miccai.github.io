@@ -28,6 +28,8 @@ Interesting novel applications of deep generative models in MIC and CAI beyond t
 
 Workshop proceedings are published as Springer Nature's Lecture Notes in Computer Science series.
 
+Associated Challenge: [AdaptOR](https://adaptor2021.github.io)
+
 ## Timeline ##
 
 |                         | Date           |
