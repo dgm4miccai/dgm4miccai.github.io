@@ -26,6 +26,7 @@ We seek contributions that include, but are not limited to:
 We particularly welcome papers driven by the theme "MIC meets CAI".
 Interesting novel applications of deep generative models in MIC and CAI beyond these topics are also welcome.
 
+Workshop proceedings are published as Springer Nature's Lecture Notes in Computer Science series.
 
 ## Timeline ##
 
