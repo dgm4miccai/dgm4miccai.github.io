@@ -5,10 +5,36 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/bulma/css/bulma.min.css">
 		<script src="https://unpkg.com/feather-icons"></script>
+		<style>
+			.animation-fade {
+				-webkit-animation: fadein 2s;
+				-moz-animation: fadein 2s;
+				-ms-animation: fadein 2s;
+				-o-animation: fadein 2s;
+				animation: fadein 2s;
+			}
+
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-moz-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-webkit-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-ms-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+		</style>
 	</head>
 	
 	<body>
-		<section class="hero is-fullheight">
+		<section class="hero is-fullheight animation-fade">
 			<div class="hero-head">
 			</div>
 			
