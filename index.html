@@ -19,7 +19,11 @@
 				-o-animation: fadein 2s;
 				animation: fadein 2s;
 			}
-
+            .column {
+                position: sticky;
+                bottom: 0;
+                top: 0;
+            }
 			@keyframes fadein {
 				from { opacity: 0; }
 				to   { opacity: 1; }
@@ -40,548 +44,606 @@
 	</head>
 	
 	<body>
-		<section class="hero is-fullheight animation-fade">
-			<div class="hero-head">
-			</div>
-			
-			<div class="hero-body">
-				<div class="container has-text-centered">
-					<img src="images/dgm4miccai2022_logo.png" class="is-128x128 is-4by3">
-					<br>
-					<br>
-					<p class="title">
-						DGM4MICCAI
+        <div class="column is-2 is-centered">
+            <nav class="nav has-shadow">
+              <div class="container">
+                <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+                <div class="nav-right nav-menu is-fixed-top">
+                  <div class="card-image has-text-centered">
+                      <div class="column is-9 is-inline-block">
+                        <img src="images/dgm4miccai2023_logo.png">
+                      </div>
+                  </div>
+                  <div class="card-image has-text-centered">
+                      <div class="column is-5 is-inline-block">
+                        <img src="images/TU_Darmstadt.png">
+					  </div>
+                      <div class="column is-5 is-inline-block">
+                        <img src="images/ITU.png">
+                      </div>
+                  </div>
+                  <div class="card-image has-text-centered">
+					<div class="column is-5 is-inline-block">
+					  <img src="images/UKHD-mini.png">
+					</div>
+					<div class="column is-5 is-inline-block">
+					  <img src="images/CityU.jpeg">
+					</div>
+                  </div>
+                  <div class="card-image has-text-centered">
+					<div class="column is-5 is-inline-block">
+					  <img src="images/UT.png">
+					</div>
+                  </div>
+                  <br>
+                  <a class="twitter-timeline" data-width="250" data-height="275" href="https://twitter.com/dgm4miccai?ref_src=twsrc%5Etfw">Tweets by dgm4miccai
+                  </a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                  </script>
+                </div>
+              </div>
+            </nav>
+          </div>
+		
+		<div class="column is-10 is-offset-2">
+			<section class="hero is-fullheight animation-fade">
+				<div class="hero-head">
+				</div>
+				
+				<div class="hero-body">
+					<div class="container has-text-centered">
+						<img src="images/dgm4miccai2023_logo.png" class="is-128x128 is-4by3">
+						<br>
+						<br>
+						<p class="title">
+							DGM4MICCAI
+						</p>
+						<p class="subtitle">
+							Deep Generative Models workshop @ MICCAI 2023
+						</p>
+					</div>
+				</div>
+				
+				<div class="hero-foot">
+					<nav class="tabs is-boxed is-fullwidth">
+						<div class="container">
+							<ul>
+								<li class="is-active"><a href="#overview">Overview</a>
+								<li><a href="#timeline">Timeline</a>
+								<li><a href="#submission">Submission Details</a>
+								<li><a href="#program">Workshop Program</a>
+								<li><a href="#keynote">Keynote Speakers</a>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</section>
+
+			<section class="section">
+				<a name="overview"></a>
+				<h2 class="title">Overview</h2>
+				<div class="content">
+					<p>
+					Deep generative models such as Generative Adversarial Network (GAN)
+					and Variational Auto-Encoder (VAE) are currently receiving widespread
+					attention from not only the computer vision and machine learning communities,
+					but also in the MIC and CAI community.
+					These models combine the advanced deep neural networks with classical
+					density estimation (either explicit or implicit) for achieving state-of-the-art
+					results.
+					DGM4MICCAI workshop at <a href="https://miccai.org">MICCAI 2023</a>
+					will be all about Deep Generative Models in Medical Image Computing
+					and Computer Assisted Interventions.
 					</p>
-					<p class="subtitle">
-						Deep Generative Models workshop @ MICCAI 2022
+				
+					<!-- <p>
+						Associated Challenge: <a href="https://adaptor2023.github.io">AdaptOR</a>
+					</p> -->
+				</div>
+			</section>
+
+	<!--		<section class="news">
+				<a name="news"></a>
+				<h2 class="title">News</h2>
+				<div class="content">
+					
+				</div>
+	</section>-->
+			
+			
+			<!-- <section class="hero is-primary">
+				<a name="submission"></a>
+				<div class="hero-body">
+					<h2 class="title">
+						The workshop will take place in the <u> Virgo2</u> room. <br>
+						Previous
+						<u>
+						<a href="https://link.springer.com/conference/dgm4miccai">
+							DGM4MICCAI Workshop Proceedings</a></u> are available via Springer Link.
+					</h2>
+					<!-- <h2 class="subtitle">
+						DOI: <a href="https://doi.org/10.1007/978-3-030-88210-5">10.1007/978-3-030-88210-5</a>
+					</h2> -->
+				<!-- </div> -->
+			<!-- </section>  -->
+			
+			
+			<!-- <section class="hero is-primary">
+				<a name="submission"></a>
+				<div class="hero-body">
+				<h2 class="title">
+					!!! Deadline extended to 2. July 2021, 11:59 PM Pacific Time !!!
+					</h2>
+					<h2 class="subtitle">
+						We are open to submissions until 25. June 2022, 11:59 PM PST. Submit your work through the <u><a href="https://cmt3.research.microsoft.com/DGM4MICCAI2022">CMT submission system</a></u>.
+					</h2>
+					<h2 class="title">
+						The decisions are out: A total of <u>12 papers were accepted</u>. Congratulations to the authors of all accepted papers.
+					</h2>
+				</div>
+			</section> -->
+
+			
+			
+			<section class="section">
+				<a name="submission"></a>
+				<div class="content">
+					<h3>Submission Details</h3>
+					<p>
+						The online submission for DGM4MICCAI is <b>open until PLACEHOLDER</b>. Contributions must be submitted online through the <a href="https://cmt3.research.microsoft.com/DGM4MICCAI2023">CMT submission system</a>.
+						<!-- The online submission for DGM4MICCAI is <b>open until 25. June 2022, 11:59 PM PST</b>. Contributions must be submitted online through the <a href="https://cmt3.research.microsoft.com/DGM4MICCAI2022">CMT submission system</a>. -->
+					</p>
+					<p>
+						We seek contributions that include, but are not limited to:
+						<ul>
+							<li>Novel architectures, loss functions, and theoretical developments for:
+								<ul>
+									<li>GANs and Adversarial Learning
+									<li>Variational Auto-Encoder
+									<li>Disentanglement
+									<li>Flow
+									<li>Autoregressive models
+								</ul>
+							<li>Multi-Modality and Cross-Modality linking
+							<li>Novel metrics and uncertainty estimates for performance assessment and interpretability of generative models
+							<li>Generative models under limited, sparse and noisy image inputs
+							<li>Supervised and Unsupervised Domain Adaptation, Transfer Learning and Multi-Task Learning
+							<li>Segmentation, Detection, Synthesis, Reconstruction, Denoising, Supersampling, Registration
+							<li>Image-to-Image translation for Synthetic Training Data Generation or Augmented Reality
+							<li>Neural Rendering
+							<li>Diffusion Models, Normalizing Flow Models, Invertible Networks
+						</ul>
+					</p>
+					<p>
+						We particularly welcome papers driven by the theme "MIC meets CAI".
+						Interesting novel applications of deep generative models in MIC and CAI beyond these topics are also welcome.
+					</p>
+
+					<p>
+						Workshop proceedings are published as part of Springer Nature's Lecture Notes in Computer Science (LNCS) series.
+						Manuscripts will be reviewed in double-blinded peer-review.
+						
+						Please prepare your workshop papers according to the
+						<a href="https://conferences.miccai.org/2023/en/PAPER-SUBMISSION-AND-REBUTTAL-GUIDELINES.html#manuscriptpreparation">
+							MICCAI submission guidelines
+						</a> (LNCS template, 8 pages maximum).<br>
+						Supplementary material: PDF documents or mp4 videos, 10 MB maximum file size.
 					</p>
 				</div>
-			</div>
+			</section>
 			
-			<div class="hero-foot">
-				<nav class="tabs is-boxed is-fullwidth">
-					<div class="container">
-						<ul>
-							<li class="is-active"><a href="#overview">Overview</a>
-							<li><a href="#timeline">Timeline</a>
-							<li><a href="#submission">Submission Details</a>
-							<li><a href="#program">Workshop Program</a>
-							<li><a href="#keynote">Keynote Speakers</a>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</section>
-
-		<section class="section">
-			<a name="overview"></a>
-			<h2 class="title">Overview</h2>
-			<div class="content">
-				<p>
-				Deep generative models such as Generative Adversarial Network (GAN)
-				and Variational Auto-Encoder (VAE) are currently receiving widespread
-				attention from not only the computer vision and machine learning communities,
-				but also in the MIC and CAI community.
-				These models combine the advanced deep neural networks with classical
-				density estimation (either explicit or implicit) for achieving state-of-the-art
-				results.
-				DGM4MICCAI workshop at <a href="https://miccai.org">MICCAI 2022</a>
-				will be all about Deep Generative Models in Medical Image Computing
-				and Computer Assisted Interventions.
-				</p>
-			
-				<p>
-					Associated Challenge: <a href="https://adaptor2022.github.io">AdaptOR</a>
-				</p>
-			</div>
-		</section>
-
-<!--		<section class="news">
-			<a name="news"></a>
-			<h2 class="title">News</h2>
-			<div class="content">
-				
-			</div>
-</section>-->
-		
-        
-        <section class="hero is-primary">
-			<a name="submission"></a>
-			<div class="hero-body">
-				<h2 class="title">
-                    The workshop will take place in the <u> Virgo2</u> room. <br>
-                    Previous
-					<u>
-					<a href="https://link.springer.com/conference/dgm4miccai">
-						DGM4MICCAI Workshop Proceedings</a></u> are available via Springer Link.
-				</h2>
-				<!-- <h2 class="subtitle">
-					DOI: <a href="https://doi.org/10.1007/978-3-030-88210-5">10.1007/978-3-030-88210-5</a>
-				</h2> -->
-			</div>
-		</section>
-		
-        
-        <!-- <section class="hero is-primary">
-            <a name="submission"></a>
-            <div class="hero-body">
-               <h2 class="title">
-                   !!! Deadline extended to 2. July 2021, 11:59 PM Pacific Time !!!
-                </h2>
-                <h2 class="subtitle">
-                    We are open to submissions until 25. June 2022, 11:59 PM PST. Submit your work through the <u><a href="https://cmt3.research.microsoft.com/DGM4MICCAI2022">CMT submission system</a></u>.
-                </h2>
-                <h2 class="title">
-                    The decisions are out: A total of <u>12 papers were accepted</u>. Congratulations to the authors of all accepted papers.
-                </h2>
-            </div>
-        </section> -->
-
-		
-		
-		<section class="section">
-			<a name="submission"></a>
-			<div class="content">
-				<h3>Submission Details</h3>
-                <p>
-                    The online submission for DGM4MICCAI is <b>open until 25. June 2022, 11:59 PM PST</b>. Contributions must be submitted online through the <a href="https://cmt3.research.microsoft.com/DGM4MICCAI2022">CMT submission system</a>.
-                </p>
-				<p>
-					We seek contributions that include, but are not limited to:
-					<ul>
-						<li>Novel architectures, loss functions, and theoretical developments for:
-							<ul>
-								<li>GANs and Adversarial Learning
-								<li>Variational Auto-Encoder
-								<li>Disentanglement
-								<li>Flow
-								<li>Autoregressive models
-							</ul>
-						<li>Multi-Modality and Cross-Modality linking
-						<li>Novel metrics and uncertainty estimates for performance assessment and interpretability of generative models
-						<li>Generative models under limited, sparse and noisy image inputs
-						<li>Supervised and Unsupervised Domain Adaptation, Transfer Learning and Multi-Task Learning
-						<li>Segmentation, Detection, Synthesis, Reconstruction, Denoising, Supersampling, Registration
-						<li>Image-to-Image translation for Synthetic Training Data Generation or Augmented Reality
-						<li>Neural Rendering
-						<li>Diffusion Models, Normalizing Flow Models, Invertible Networks
-					</ul>
-				</p>
-				<p>
-					We particularly welcome papers driven by the theme "MIC meets CAI".
-					Interesting novel applications of deep generative models in MIC and CAI beyond these topics are also welcome.
-				</p>
-
-				<p>
-					Workshop proceedings are published as part of Springer Nature's Lecture Notes in Computer Science (LNCS) series.
-					Manuscripts will be reviewed in double-blinded peer-review.
+			<section class="section">
+				<a name="timeline"></a>
+				<h2 class="title">Timeline</h2>
+				<div class="content">
 					
-					Please prepare your workshop papers according to the
-					<a href="https://conferences.miccai.org/2022/en/PAPER-SUBMISSION-AND-REBUTTAL-GUIDELINES.html#manuscriptpreparation">
-						MICCAI submission guidelines
-					</a> (LNCS template, 8 pages maximum).<br>
-					Supplementary material: PDF documents or mp4 videos, 10 MB maximum file size.
-				</p>
-			</div>
-		</section>
-		
-		<section class="section">
-			<a name="timeline"></a>
-			<h2 class="title">Timeline</h2>
-			<div class="content">
-				
-			<div class="table-container">
-				<table class="table">
-					<thead>
+				<div class="table-container">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Event</th>
+								<th>Date</th>
+							</tr>
+						</thead>
 						<tr>
-							<th>Event</th>
-							<th>Date</th>
+							<td>Paper Submission Deadline</td>
+							<td>TBD</td>
+						</tr>
+						<tr>
+							<td>Review Release</td>
+							<td>TBD</td>
+						<tr>
+							<td>Final Decision</td>
+							<td>TBD</td>
+						</tr>
+						<tr>
+							<td>Camera ready papers due</td>
+							<td>TBD</td>
+						</tr>
+						<tr>
+							<td>DGM4MICCAI Workshop</td>
+							<td><a href="https://miccai.org">TBD</a></td>
+						</tr>
+					</table>
+				</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<a name="program"></a>
+					
+				<div class="content">
+					<h2 class="title">Preliminary Program</h2>
+					DGM4MICCAI workshop will be a half-day event, following the agenda below:
+
+					<div class="table-container">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Start</th>
+								<th>End</th>
+								<th>Topic</th>
+							</tr>
+						</thead>
+	<!--					<tr>-->
+	<!--						<td>8:00 AM-->
+	<!--						<td>8:15 AM-->
+	<!--						<td>Welcome-->
+	<!--					<tr>-->
+	<!--						<td>8:15 AM-->
+	<!--						<td>8:50 AM-->
+	<!--						<td>Plenary session 1-->
+	<!--					<tr>-->
+	<!--						<td>8:50 AM-->
+	<!--						<td>9:35 AM-->
+	<!--						<td>Oral session 1 (6 presentations, each oral 5 minutes)-->
+	<!--					<tr>-->
+	<!--						<td>9:35 AM-->
+	<!--						<td>9:50 AM-->
+	<!--						<td>Coffee break-->
+	<!--					<tr>-->
+	<!--						<td>9:50 AM-->
+	<!--						<td>10:35 AM-->
+	<!--						<td>Plenary session 2-->
+	<!--					<tr>-->
+	<!--						<td>10:35 AM-->
+	<!--						<td>11:10 AM-->
+	<!--						<td>Oral session 2 (6 presentations, each oral 5 minutes)-->
+	<!--					<tr>-->
+	<!--						<td>11:10 AM-->
+	<!--						<td>11:30 PM-->
+	<!--						<td>AdaptOR Challenge results-->
+	<!--<!--					<tr>-->
+	<!--<!--						<td>11:30 PM-->
+	<!--<!--						<td>11:40 PM-->
+	<!--<!--						<td>Closing remarks-->
+					</table>
+					</div>
+	<!--				<br>-->
+	<!--				All times are given in <strong>SGT</strong> time.-->
+	<!--				Please note that times might be subject to change, so keep an eye-->
+	<!--				on the schedule or follow us on <a href="https://twitter.com/dgm4miccai">Twitter</a>-->
+	<!--				to be up-to-date.-->
+	<!--				<br><br>-->
+
+						<!-- <a class="button" href="misc/ical-event.ics" download>Download iCal Event</a> -->
+					
+				</div>
+			</section>
+
+
+		<section class="section">
+			<a name="program"></a>
+				
+			<div class="content">
+				<!-- <h2 class="title">Program</h2>
+				DGM4MICCAI workshop will be a half-day event (Room: Virgo2), following the agenda below: -->
+
+				<div class="table-container">
+				<table class="table">
+					<!-- <thead>
+						<tr>
+							<th>Start</th>
+							<th>End</th>
+							<th>Topic</th>
+							<th>Session chair</th>
 						</tr>
 					</thead>
 					<tr>
-						<td>Paper Submission Deadline</td>
-						<td>25 June 2022</td>
-					</tr>
+						<td>8:00 AM
+						<td>8:15 AM
+						<td>Opening
+						<td>
 					<tr>
-						<td>Review Release</td>
-						<td>13 July 2022</td>
+						<td>8:15 AM
+						<td>8:50 AM
+						<td>Plenary session 1
+						<td>Plenary session 1 (Islem Rekik)
+						<td>Sandy Engelhardt; Ilkay Oksuz
 					<tr>
-						<td>Final Decision</td>
-						<td>16 July 2022</td>
-					</tr>
-                    <tr>
-                        <td>Camera ready papers due</td>
-                        <td>27 July 2022</td>
-                    </tr>
+						<td>8:50 AM
+						<td>9:15 AM
+						<td>Oral Method session 1 + Q&A
+						<td>Oral Method session 1 (Papers <a href="#oral_sessions_m">10, 7, 14</a>) + Q&A
+						<td>Sandy Engelhardt; Ilkay Oksuz
 					<tr>
-						<td>DGM4MICCAI Workshop</td>
-						<td><a href="https://www.miccai2022.org">22 September 2022</a></td>
-					</tr>
+						<td>9:15 AM
+						<td>9:40 AM
+						<td>Oral Method session 2 + Q&A
+						<td>Oral Method session 2 (Papers <a href="#oral_sessions_m">1, 3, 15</a>) + Q&A
+						<td>Sandy Engelhardt; Ilkay Oksuz
+					<tr>
+						<td>9:40 AM
+						<td>10:00 AM
+						<td>Coffee break
+						<td>
+					<tr>
+						<td>10:00 AM
+						<td>10:35 AM
+						<td>Plenary session 2
+						<td>Plenary session 2 (Michal Rosen-Zvi)
+						<td>Sandy Engelhardt; Anirban Mukhopadhyay
+					<tr>
+						<td>10:35 AM
+						<td>11:00 AM
+						<td>Oral Application session 1 + Q&A
+						<td>Oral Application session 1 (Papers <a href="#oral_sessions_a">13, 5, 12</a>) + Q&A
+						<td>Ilkay Oksuz; Anirban Mukhopadhyay
+					<tr>
+					<tr>
+						<td>11:00 AM
+						<td>11:25 AM
+						<td>Oral Application session 2 + Q&A
+						<td>Oral Application session 2 (Papers <a href="#oral_sessions_a">4, 8, 11</a>) + Q&A
+						<td>Ilkay Oksuz; Anirban Mukhopadhyay
+					<tr>
+						<td>11:25 AM
+						<td>11:30 PM
+						<td>AdaptOR Challenge and closing remarks
+						<td> -->
 				</table>
-			</div>
+				</div>
+				<br>
+				<!-- All times are given in <strong>SGT</strong> time and the workshop will take place in the <strong>Virgo2</strong> room.  -->
+				Please note that times might be subject to change, so keep an eye
+				on the schedule or follow us on <a href="https://twitter.com/dgm4miccai">Twitter</a>
+				to be up-to-date.
+				<br><br>
+				<!--
+					<a class="button" href="misc/ical-event.ics" download>Download iCal Event</a>
+				-->
 			</div>
 		</section>
 
-<!---->
-<!--		<section class="section">-->
-<!--			<a name="program"></a>-->
-<!--				-->
-<!--			<div class="content">-->
-<!--				<h2 class="title">Preliminary Program</h2>-->
-<!--				DGM4MICCAI workshop will be a half-day event, following the agenda below:-->
-<!---->
-<!--				<div class="table-container">-->
-<!--				<table class="table">-->
-<!--					<thead>-->
-<!--						<tr>-->
-<!--							<th>Start</th>-->
-<!--							<th>End</th>-->
-<!--							<th>Topic</th>-->
-<!--						</tr>-->
-<!--					</thead>-->
-<!--					<tr>-->
-<!--						<td>8:00 AM-->
-<!--						<td>8:15 AM-->
-<!--						<td>Welcome-->
-<!--					<tr>-->
-<!--						<td>8:15 AM-->
-<!--						<td>8:50 AM-->
-<!--						<td>Plenary session 1-->
-<!--					<tr>-->
-<!--						<td>8:50 AM-->
-<!--						<td>9:35 AM-->
-<!--						<td>Oral session 1 (6 presentations, each oral 5 minutes)-->
-<!--					<tr>-->
-<!--						<td>9:35 AM-->
-<!--						<td>9:50 AM-->
-<!--						<td>Coffee break-->
-<!--					<tr>-->
-<!--						<td>9:50 AM-->
-<!--						<td>10:35 AM-->
-<!--						<td>Plenary session 2-->
-<!--					<tr>-->
-<!--						<td>10:35 AM-->
-<!--						<td>11:10 AM-->
-<!--						<td>Oral session 2 (6 presentations, each oral 5 minutes)-->
-<!--					<tr>-->
-<!--						<td>11:10 AM-->
-<!--						<td>11:30 PM-->
-<!--						<td>AdaptOR Challenge results-->
-<!--<!--					<tr>-->
-<!--<!--						<td>11:30 PM-->
-<!--<!--						<td>11:40 PM-->
-<!--<!--						<td>Closing remarks-->
-<!--				</table>-->
-<!--				</div>-->
-<!--				<br>-->
-<!--				All times are given in <strong>SGT</strong> time.-->
-<!--				Please note that times might be subject to change, so keep an eye-->
-<!--				on the schedule or follow us on <a href="https://twitter.com/dgm4miccai">Twitter</a>-->
-<!--				to be up-to-date.-->
-<!--				<br><br>-->
-<!--				<!---->
-<!--					<a class="button" href="misc/ical-event.ics" download>Download iCal Event</a>-->
-<!--				-->
-<!--			</div>-->
-<!--		</section>-->
-
-
-    <section class="section">
-        <a name="program"></a>
-            
-        <div class="content">
-            <h2 class="title">Program</h2>
-            DGM4MICCAI workshop will be a half-day event (Room: Virgo2), following the agenda below:
-
-            <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Start</th>
-                        <th>End</th>
-                        <th>Topic</th>
-                        <th>Session chair</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>8:00 AM
-                    <td>8:15 AM
-                    <td>Opening
-					<td>
-                <tr>
-                    <td>8:15 AM
-                    <td>8:50 AM
-                    <td>Plenary session 1 (Islem Rekik)
-					<td>Sandy Engelhardt; Ilkay Oksuz
-                <tr>
-                    <td>8:50 AM
-                    <td>9:15 AM
-                    <td>Oral Method session 1 (Papers <a href="#oral_sessions_m">10, 7, 14</a>) + Q&A
-                    <td>Sandy Engelhardt; Ilkay Oksuz
-                <tr>
-                    <td>9:15 AM
-                    <td>9:40 AM
-                    <td>Oral Method session 2 (Papers <a href="#oral_sessions_m">1, 3, 15</a>) + Q&A
-					<td>Sandy Engelhardt; Ilkay Oksuz
-                <tr>
-                    <td>9:40 AM
-                    <td>10:00 AM
-                    <td>Coffee break
-					<td>
-                <tr>
-                    <td>10:00 AM
-                    <td>10:35 AM
-                    <td>Plenary session 2 (Michal Rosen-Zvi)
-					<td>Sandy Engelhardt; Anirban Mukhopadhyay
-                <tr>
-                    <td>10:35 AM
-                    <td>11:00 AM
-                    <td>Oral Application session 1 (Papers <a href="#oral_sessions_a">13, 5, 12</a>) + Q&A
-					<td>Ilkay Oksuz; Anirban Mukhopadhyay
-                <tr>
-                <tr>
-                    <td>11:00 AM
-                    <td>11:25 AM
-                    <td>Oral Application session 2 (Papers <a href="#oral_sessions_a">4, 8, 11</a>) + Q&A
-					<td>Ilkay Oksuz; Anirban Mukhopadhyay
-                <tr>
-                    <td>11:25 AM
-                    <td>11:30 PM
-                    <td>AdaptOR Challenge and closing remarks
-					<td>
-            </table>
-            </div>
-            <br>
-            All times are given in <strong>SGT</strong> time and the workshop will take place in the <strong>Virgo2</strong> room. 
-            Please note that times might be subject to change, so keep an eye
-            on the schedule or follow us on <a href="https://twitter.com/dgm4miccai">Twitter</a>
-            to be up-to-date.
-            <br><br>
-            <!--
-                <a class="button" href="misc/ical-event.ics" download>Download iCal Event</a>
-            -->
-        </div>
-    </section>
-
-		<section class="section">
-			<a name="keynote"></a>
-			<div class="container">
-				<h2 class="title">Keynote Speakers</h2>
-				<div class="columns is-centered">
-					
-					<div class="column">
-						<div class="box">
-							<div class="columns is-mobile is-centered is-vcentered">
-								<div class="column is-3">
-									<figure class="image is-96x96">
-										<img class="is-rounded" src="images/michal-rosen-zvi.jpg">
-									</figure>
+			<section class="section">
+				<a name="keynote"></a>
+				<div class="container">
+					<h2 class="title">Keynote Speaker</h2>
+					<div class="columns is-centered">
+						
+						<div class="column">
+							<div class="box">
+								<div class="columns is-mobile is-centered is-vcentered">
+									<div class="column is-3">
+										<figure class="image is-96x96">
+											<img class="is-rounded" src="images/Ke Li.jpg">
+											<!-- <img class="is-rounded" src="images/michal-rosen-zvi.jpg"> -->
+										</figure>
+									</div>
+									<div class="column is-6">
+										<h3 class="title">Ke Li</h3>
+										<h4 class="subtitle">Assistant Professor at Simon Fraser University</h4>
+										<h4 class="subtitle">Canada</h4>
+									</div>
+									<div class="column">
+										<small><a href="https://twitter.com/KL_Div" style="margin-left:2em">
+											<i data-feather="twitter"></i>
+											</a></small>
+										<small><a href="https://www.sfu.ca/~keli/" style="margin-left:2em">
+											<i data-feather="link"></i>
+											</a></small>
+									</div>
 								</div>
-								<div class="column is-6">
-									<h3 class="title">Michal Rosen-Zvi</h3>
-									<h4 class="subtitle">IBM Research</h4>
-									<h4 class="subtitle">Israel</h4>
+								<div class="columns is-mobile">
+									<div class="column is-9">
+										<h4 class="subtitle"><b>PLACEHOLDER TOPIC</b></h4>
+										
+									</div>
 								</div>
-								<div class="column">
-									<small><a href="https://twitter.com/https://twitter.com/michal_zvi" style="margin-left:2em">
-										<i data-feather="twitter"></i>
-										</a></small>
-									<small><a href="https://researcher.watson.ibm.com/researcher/view.php?person=il-ROSEN" style="margin-left:2em">
-										<i data-feather="link"></i>
-										</a></small>
-								</div>
-							</div>
-                            <div class="columns is-mobile">
-                                <div class="column is-9">
-                                    <h4 class="subtitle"><b>Deep generative models for drug discovery</b></h4>
-                                    
-                                </div>
-                            </div>
-							<div class="content">
-								<div class="wrapped">
-									<h3 class="subtitle"></h3>
+								<div class="content">
+									<div class="wrapped">
+										<h3 class="subtitle"></h3>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class="column">
-						<div class="box">
-							<div class="columns is-mobile is-centered is-vcentered">
-								<div class="column is-3">
-									<figure class="image is-96x96">
-										<img class="is-rounded" src="images/islem_rekik.png">
-									</figure>
+						
+						<!-- <div class="column">
+							<div class="box">
+								<div class="columns is-mobile is-centered is-vcentered">
+									<div class="column is-3">
+										<figure class="image is-96x96">
+											<img class="is-rounded" src="images/islem_rekik.png">
+										</figure>
+									</div>
+									<div class="column is-6">
+										<h3 class="title">Islem Rekik</h3>
+										<h4 class="subtitle">Istanbul Technical University</h4>
+										<h4 class="subtitle">Turkey</h4>
+									</div>
+									<div class="column">
+										<small><a href="https://basira-lab.com/" style="margin-left:2em">
+											<i data-feather="link"></i>
+											</a></small>
+									</div>
 								</div>
-								<div class="column is-6">
-									<h3 class="title">Islem Rekik</h3>
-									<h4 class="subtitle">Istanbul Technical University</h4>
-									<h4 class="subtitle">Turkey</h4>
+								<div class="columns is-mobile">
+									<div class="column is-9">
+										<h4 class="subtitle"><b>A roadmap to non-invasive brain mapping and diagnosis with/out data</b></h4>
+										
+									</div>
 								</div>
-								<div class="column">
-									<small><a href="https://basira-lab.com/" style="margin-left:2em">
-										<i data-feather="link"></i>
-										</a></small>
-								</div>
-							</div>
-                            <div class="columns is-mobile">
-                                <div class="column is-9">
-                                    <h4 class="subtitle"><b>A roadmap to non-invasive brain mapping and diagnosis with/out data</b></h4>
-                                    
-                                </div>
-                            </div>
-							<div class="content">
-								<div class="wrapped">
+								<div class="content">
+									<div class="wrapped">
 
-									<h3 class="title"></h3>
+										<h3 class="title"></h3>
+									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
-			</div>
-		</section>
-		
-		<section class="section">
-			<a name="oral", id="oral_sessions"></a>
-			<h2 class="title">Oral Sessions</h2>
-			<div class="content">
-                <a id="oral_sessions_m"></a>
-				<h3 class="title">Method Session</h3>
-				<table class="table">
-					<thead>
-						<tr>
-							<th>Paper ID<th>Title<th>Authors<th>Time Slot
-					</thead>
-					<tr>
-						<td>1<td>Flow-based Visual Quality Enhancer for Super-resolution Magnetic Resonance Spectroscopic Imaging<td>Siyuan, Dong; Gilbert, Hangel, Eric, Z. Chen; Shanhui, Sun; Wolfgang, Bogner; Georg, Widhalm; Chenyu, You; John, A. Onofrey; Robin, A. de Graaf; James, S. Duncan<td>9:15 AM - 9:40 AM
-					<tr>
-                        <td>3<td>Cross Attention Transformers for Multi-modal Unsupervised Whole-Body PET Anomaly Detection<td>Ashay,  Patel; Petru-Daniel, Tudosiu; Walter, Hugo Lopez Pinaya; Gary, Cook; Vicky, Goh; Sebastien, Ourselin; Jorge, Cardoso<td>9:15 AM - 9:40 AM
-                    <tr>
-						<td>7<td>Interpreting Latent Spaces of Generative Models for Medical Images using Unsupervised Methods<td>Julian, Schön; Raghavendra, Selvan; Jens, Petersen<td>8:50 AM - 9:15 AM
-					<tr>
-						<td>10<td>What is Healthy? Generative Counterfactual Diffusion for Lesion Localization<td>Pedro, Sanchez; Antanas, Kascenas; Xiao, Liu; Alison, Q. O'Neil; Sotirios, Tsaftaris<td>8:50 AM - 9:15 AM
-                    <tr>
-                        <td>14<td>Learning Generative Factors of EEG Data with Variational auto-encoders<td>Maksim, Zhdanov; Saskia, Steinmann; Nico, Hoffmann<td>8:50 AM - 9:15 AM
-					<tr>
-						<td>15<td>An Image Feature Mapping Model for Continuous Longitudinal Data Completion and Generation of Synthetic Patient Trajectories<td>Clément, Chadebec; Evi, M.C. Huijben; Josien, P.W. Pluim; Stéphanie, Allassonnière; Maureen, A.J.M van Eijnatten<td>9:15 AM - 9:40 AM
-					<tr>
-				</table>
-				
-                <a id="oral_sessions_a"></a>
-				<h3 class="title">Application Session</h3>
+			</section>
+			
+			<section class="section">
+				<a name="oral", id="oral_sessions"></a>
+				<h2 class="title">Oral Sessions</h2>
+				<div class="content">
+					<a id="oral_sessions_m"></a>
+					<!-- <h3 class="title">Method Session</h3>
 					<table class="table">
 						<thead>
 							<tr>
 								<th>Paper ID<th>Title<th>Authors<th>Time Slot
 						</thead>
+						<tr>
+							<td>1<td>Flow-based Visual Quality Enhancer for Super-resolution Magnetic Resonance Spectroscopic Imaging<td>Siyuan, Dong; Gilbert, Hangel, Eric, Z. Chen; Shanhui, Sun; Wolfgang, Bogner; Georg, Widhalm; Chenyu, You; John, A. Onofrey; Robin, A. de Graaf; James, S. Duncan<td>9:15 AM - 9:40 AM
+						<tr>
+							<td>3<td>Cross Attention Transformers for Multi-modal Unsupervised Whole-Body PET Anomaly Detection<td>Ashay,  Patel; Petru-Daniel, Tudosiu; Walter, Hugo Lopez Pinaya; Gary, Cook; Vicky, Goh; Sebastien, Ourselin; Jorge, Cardoso<td>9:15 AM - 9:40 AM
+						<tr>
+							<td>7<td>Interpreting Latent Spaces of Generative Models for Medical Images using Unsupervised Methods<td>Julian, Schön; Raghavendra, Selvan; Jens, Petersen<td>8:50 AM - 9:15 AM
+						<tr>
+							<td>10<td>What is Healthy? Generative Counterfactual Diffusion for Lesion Localization<td>Pedro, Sanchez; Antanas, Kascenas; Xiao, Liu; Alison, Q. O'Neil; Sotirios, Tsaftaris<td>8:50 AM - 9:15 AM
+						<tr>
+							<td>14<td>Learning Generative Factors of EEG Data with Variational auto-encoders<td>Maksim, Zhdanov; Saskia, Steinmann; Nico, Hoffmann<td>8:50 AM - 9:15 AM
+						<tr>
+							<td>15<td>An Image Feature Mapping Model for Continuous Longitudinal Data Completion and Generation of Synthetic Patient Trajectories<td>Clément, Chadebec; Evi, M.C. Huijben; Josien, P.W. Pluim; Stéphanie, Allassonnière; Maureen, A.J.M van Eijnatten<td>9:15 AM - 9:40 AM
+						<tr>
+					</table> -->
+					
+					<a id="oral_sessions_a"></a>
+					<!-- <h3 class="title">Application Session</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Paper ID<th>Title<th>Authors<th>Time Slot
+							</thead>
 
-					<tr>
-						<td>4<td>Novel View Synthesis for Surgical Recording<td>Mana, Masuda; Hideo, Saito; Yoshihumi, Takatsume; Hiroki, Kajita<td>11:00 AM - 11:25 AM
-					<tr>
-						<td>5<td>Anomaly Detection using Generative Models and Sum-Product Networks in Mammography Scans<td>Marc, Dietrichstein; David, Major; Martin, Trapp; Maria, Wimmer; Dimitrios, Lenis; Philip, Winter; Astrid, Berg; Theresa, Neubauer; Katja, Bühler<td>10:35 AM - 11:00 AM
-					<tr>
-						<td>8<td>Image Translation Based Nuclei Segmentation for Immunohistochemistry Images<td>Roger, Trullo; Quoc-Anh, BUI; Qi, Tang; Reza, Olfati-Saber<td>11:00 AM - 11:25 AM
-					<tr>
-						<td>11<td>3D (c)GAN for whole body MR synthesis<td>Daniel, Mensing; Jochen, Hirsch; Markus, T. Wenzel; Matthias, Guenther<td>11:00 AM - 11:25 AM
-                    <tr>
-                        <td>12<td>Airway measurement by refinement of synthetic images improves mortality prediction in idiopathic pulmonary fibrosis<td>Ashkan, Pakzad; Moucheng, Xu; Wing, Keung Cheung; Marie, Vermant; Tinne, Goos; Laurens, De Sadeleer; Stijn, Verleden; Wim, Wuyts; John, Hurst; Joseph, Jacob<td>10:35 AM - 11:00 AM
-                    <tr>
-                        <td>13<td>Brain Imaging Generation with Latent Diffusion Models<td>Walter, Hugo Lopez Pinaya; Petru-Daniel, Tudosiu; Jessica, Dafflon; Pedro, F. da Costa; Virginia, Fernandez; Parashkev, Nachev; Sebastien, Ourselin; Jorge, Cardoso<td>10:35 AM - 11:00 AM
-				</table>
-				
-<!--				<h3 class="title">AdaptOR Papers</h3>-->
-<!--					<table class="table">-->
-<!--						<thead>-->
-<!--							<tr>-->
-<!--								<th>Paper ID<th>Title<th>Authors-->
-<!--						</thead>-->
-<!---->
-<!--					<tr>-->
-<!--						<td>25<td>Improved Heatmap-based Landmark Detection<td>Yao, Huifeng*; Guo, Ziyu; Zhang , Yatao; Li, Xiaomeng-->
-<!--					<tr>-->
-<!--						<td>27<td>Cross-domain Landmarks Detection in Mitral Regurgitation<td>Wang, Jiacheng; Wang, Haojie; Mu, Ruochen; Wang, Liansheng*-->
-<!--				</table>-->
+						<tr>
+							<td>4<td>Novel View Synthesis for Surgical Recording<td>Mana, Masuda; Hideo, Saito; Yoshihumi, Takatsume; Hiroki, Kajita<td>11:00 AM - 11:25 AM
+						<tr>
+							<td>5<td>Anomaly Detection using Generative Models and Sum-Product Networks in Mammography Scans<td>Marc, Dietrichstein; David, Major; Martin, Trapp; Maria, Wimmer; Dimitrios, Lenis; Philip, Winter; Astrid, Berg; Theresa, Neubauer; Katja, Bühler<td>10:35 AM - 11:00 AM
+						<tr>
+							<td>8<td>Image Translation Based Nuclei Segmentation for Immunohistochemistry Images<td>Roger, Trullo; Quoc-Anh, BUI; Qi, Tang; Reza, Olfati-Saber<td>11:00 AM - 11:25 AM
+						<tr>
+							<td>11<td>3D (c)GAN for whole body MR synthesis<td>Daniel, Mensing; Jochen, Hirsch; Markus, T. Wenzel; Matthias, Guenther<td>11:00 AM - 11:25 AM
+						<tr>
+							<td>12<td>Airway measurement by refinement of synthetic images improves mortality prediction in idiopathic pulmonary fibrosis<td>Ashkan, Pakzad; Moucheng, Xu; Wing, Keung Cheung; Marie, Vermant; Tinne, Goos; Laurens, De Sadeleer; Stijn, Verleden; Wim, Wuyts; John, Hurst; Joseph, Jacob<td>10:35 AM - 11:00 AM
+						<tr>
+							<td>13<td>Brain Imaging Generation with Latent Diffusion Models<td>Walter, Hugo Lopez Pinaya; Petru-Daniel, Tudosiu; Jessica, Dafflon; Pedro, F. da Costa; Virginia, Fernandez; Parashkev, Nachev; Sebastien, Ourselin; Jorge, Cardoso<td>10:35 AM - 11:00 AM
+					</table> -->
+					
+	<!--				<h3 class="title">AdaptOR Papers</h3>-->
+	<!--					<table class="table">-->
+	<!--						<thead>-->
+	<!--							<tr>-->
+	<!--								<th>Paper ID<th>Title<th>Authors-->
+	<!--						</thead>-->
+	<!---->
+	<!--					<tr>-->
+	<!--						<td>25<td>Improved Heatmap-based Landmark Detection<td>Yao, Huifeng*; Guo, Ziyu; Zhang , Yatao; Li, Xiaomeng-->
+	<!--					<tr>-->
+	<!--						<td>27<td>Cross-domain Landmarks Detection in Mitral Regurgitation<td>Wang, Jiacheng; Wang, Haojie; Mu, Ruochen; Wang, Liansheng*-->
+	<!--				</table>-->
 
-			</div>
-		</section>
-
-		
-		<footer class="footer">
-	
-		<div class="columns">
-			<div class="column">
-		<section class="section">
-			<a name="keynote"></a>
-			<h2 class="title">Organizing Committee</h2>
-			<div class="container content">
-				<ul>
-					<li>Sandy Engelhardt, Heidelberg University, Germany
-					<li>Ilkay Oksuz, Istanbul Technical University, Turkey
-					<li>Dajiang Zhu, University of Texas, USA
-					<li>Yixuan Yuan, City University of Hong Kong, China
-					<li>Anirban Mukhopadhyay, Technische Universität Darmstadt, Germany
-				</ul>
-				
-				Student organizers:
-				<ul>
-					<li>Lalith Sharan, University Hospital Heidelberg, Germany
-					<li>Henry Krumb, TU Darmstadt, Germany
-					<li>Moritz Fuchs, TU Darmstadt, Germany
-                    <li>Amin Ranem, TU Darmstadt, Germany
-					<li>Caner Özer, Istanbul Technical University, Turkey
-					<li>Chen Zhen, City University of Hong Kong
-					<li>Guo Xiaoqing, City University of Hong Kong
-			</div>
-		</section>
-			</div>
-
-			<div class="column">
-		<section class="section">
-			<h2 class="title">Program Committee</h2>
-			<div class="container content">
-				<ul>
-					<li>Li Wang, University of Texas at Arlington, USA
-					<li>Tong Zhang , Peng Cheng Laboratory, Shenzhen, China
-					<li>Ping Lu, Oxford University, UK
-					<li>Roxane Licandro, Medical University of Vienna, Austria
-					<li>Chen Qin, University of Edinburgh, UK
-					<li>Veronika Zimmer, TU Muenchen, Germany
-					<li>Dwarikanath Mahapatra, Inception Institute of AI, UAE
-					<li>Michael Sdika, CREATIS Lyon, France
-					<li>Jelmer Wolterink, Univ. of Twente, The Netherlands
-					<li>Alejandro Granados, King's College London, UK
-					<li>Jinglei Lv, The University of Sydney, Australia
-					<li>Shiba Kuanar, Mayo Clinic, USA
-					<li>Onat Dalmaz, Bilkent University, Turkey
-					<li>Yuri Tolkach, University Hospital Cologne, Germany
-				</ul>
-			</div>
-					</section>
 				</div>
-			</div>
-			<hr>
+			</section>
+
+			
+			<footer class="footer">
+		
 			<div class="columns">
 				<div class="column">
-					<div class="content has-text-centered">
-						<strong>Contact:</strong><br>
-						anirban.mukhopadhyay[at]gris.informatik.tu-darmstadt.de
-		 			</div>
+			<section class="section">
+				<a name="keynote"></a>
+				<h2 class="title">Organizing Committee</h2>
+				<div class="container content">
+					<ul>
+						<li>Sandy Engelhardt, Heidelberg University, Germany
+						<li>Ilkay Oksuz, Istanbul Technical University, Turkey
+						<li>Dajiang Zhu, University of Texas, USA
+						<li>Yixuan Yuan, City University of Hong Kong, China
+						<li>Anirban Mukhopadhyay, Technische Universität Darmstadt, Germany
+					</ul>
+					
+					Student organizers:
+					<ul>
+						<li>Lalith Sharan, University Hospital Heidelberg, Germany
+						<li>Henry Krumb, TU Darmstadt, Germany
+						<li>Moritz Fuchs, TU Darmstadt, Germany
+						<li>Amin Ranem, TU Darmstadt, Germany
+						<li>Caner Özer, Istanbul Technical University, Turkey
+						<li>Chen Zhen, City University of Hong Kong
+						<li>Guo Xiaoqing, City University of Hong Kong
 				</div>
+			</section>
+				</div>
+
 				<div class="column">
-					<div class="content has-text-centered">
-						<a href="https://twitter.com/dgm4miccai">
-							<i data-feather="twitter"></i>
-							<br>
-							Follow us on Twitter
-						</a>
+			<section class="section">
+				<h2 class="title">Program Committee</h2>
+				<div class="container content">
+					<ul>
+						<li>Li Wang, University of Texas at Arlington, USA
+						<li>Tong Zhang , Peng Cheng Laboratory, Shenzhen, China
+						<li>Ping Lu, Oxford University, UK
+						<li>Roxane Licandro, Medical University of Vienna, Austria
+						<li>Chen Qin, University of Edinburgh, UK
+						<li>Veronika Zimmer, TU Muenchen, Germany
+						<li>Dwarikanath Mahapatra, Inception Institute of AI, UAE
+						<li>Michael Sdika, CREATIS Lyon, France
+						<li>Jelmer Wolterink, Univ. of Twente, The Netherlands
+						<li>Alejandro Granados, King's College London, UK
+						<li>Jinglei Lv, The University of Sydney, Australia
+						<li>Shiba Kuanar, Mayo Clinic, USA
+						<li>Onat Dalmaz, Bilkent University, Turkey
+						<li>Yuri Tolkach, University Hospital Cologne, Germany
+					</ul>
+				</div>
+						</section>
 					</div>
 				</div>
-			</div>
-		</footer>
-		
-		<script>
-			feather.replace()
-		</script>
+				<hr>
+				<div class="columns">
+					<div class="column">
+						<div class="content has-text-centered">
+							<strong>Contact:</strong><br>
+							anirban.mukhopadhyay[at]gris.informatik.tu-darmstadt.de
+						</div>
+					</div>
+					<div class="column">
+						<div class="content has-text-centered">
+							<a href="https://twitter.com/dgm4miccai">
+								<i data-feather="twitter"></i>
+								<br>
+								Follow us on Twitter
+							</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content has-text-centered">
+							<a rel="me" href="https://sigmoid.social/@dgm4miccai">
+								<!-- <i data-feather="twitter"></i> -->
+								<br>
+								Mastadon</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<script>
+				feather.replace()
+			</script>
+	</div>
 	</body>
 </html>
