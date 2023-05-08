@@ -21,9 +21,16 @@
 			}
             .column  {
                 position: sticky;
-                bottom: 0;
                 top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
             }
+			.sticky {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+			}
 			@keyframes fadein {
 				from { opacity: 0; }
 				to   { opacity: 1; }
@@ -45,49 +52,50 @@
 	
 	<body>
 		<div class="columns">
-			<div class="column is-2 is-centered">
-				<nav class="nav has-shadow">
-				<div class="container">
-					<input type="checkbox" id="menu-toggle" class="is-hidden"/>
-					<div class="nav-right nav-menu is-fixed-top">
-					<div class="card-image has-text-centered">
-						<div class="column is-9 is-inline-block">
-							<img src="images/dgm4miccai2023_logo.png">
+			<div class="column">
+				<div class="column is-10 is-centered">
+					<nav class="nav has-shadow">
+					<div class="container">
+						<input type="checkbox" id="menu-toggle" class="is-hidden"/>
+						<div class="nav-right nav-menu is-fixed-top">
+						<div class="card-image has-text-centered">
+							<div class="column is-9 is-inline-block">
+								<img src="images/dgm4miccai2023_logo.png">
+							</div>
+						</div>
+						<div class="card-image has-text-centered">
+							<div class="column is-5 is-inline-block">
+								<img src="images/TU_Darmstadt.png">
+							</div>
+							<div class="column is-5 is-inline-block">
+								<img src="images/ITU.png">
+							</div>
+						</div>
+						<div class="card-image has-text-centered">
+							<div class="column is-5 is-inline-block">
+							<img src="images/UKHD-mini.png">
+							</div>
+							<div class="column is-5 is-inline-block">
+							<img src="images/CityU.jpeg">
+							</div>
+						</div>
+						<div class="card-image has-text-centered">
+							<div class="column is-5 is-inline-block">
+							<img src="images/UT.png">
+							</div>
+						</div>
+						<br>
+						<a class="twitter-timeline" data-width="250" data-height="275" href="https://twitter.com/dgm4miccai?ref_src=twsrc%5Etfw">Tweets by dgm4miccai
+						</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+						</script>
 						</div>
 					</div>
-					<div class="card-image has-text-centered">
-						<div class="column is-5 is-inline-block">
-							<img src="images/TU_Darmstadt.png">
-						</div>
-						<div class="column is-5 is-inline-block">
-							<img src="images/ITU.png">
-						</div>
-					</div>
-					<div class="card-image has-text-centered">
-						<div class="column is-5 is-inline-block">
-						<img src="images/UKHD-mini.png">
-						</div>
-						<div class="column is-5 is-inline-block">
-						<img src="images/CityU.jpeg">
-						</div>
-					</div>
-					<div class="card-image has-text-centered">
-						<div class="column is-5 is-inline-block">
-						<img src="images/UT.png">
-						</div>
-					</div>
-					<br>
-					<a class="twitter-timeline" data-width="250" data-height="275" href="https://twitter.com/dgm4miccai?ref_src=twsrc%5Etfw">Tweets by dgm4miccai
-					</a>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-					</script>
-					</div>
+					</nav>
 				</div>
-				</nav>
 			</div>
 
-			<!-- <div class="column"> -->
-			<div class="column is-10">
+			<div class="column is-10 is-offset-2">
 				<section class="hero is-fullheight animation-fade">
 					<div class="hero-head">
 					</div>
@@ -206,6 +214,8 @@
 										<li>Flow
 										<li>Autoregressive models
 									</ul>
+								<li>Stable Diffusion Models
+								<li>Causal generative models
 								<li>Multi-Modality and Cross-Modality linking
 								<li>Novel metrics and uncertainty estimates for performance assessment and interpretability of generative models
 								<li>Generative models under limited, sparse and noisy image inputs
@@ -585,8 +595,6 @@
 							<li>Moritz Fuchs, TU Darmstadt, Germany
 							<li>Amin Ranem, TU Darmstadt, Germany
 							<li>Caner Özer, Istanbul Technical University, Turkey
-							<li>Chen Zhen, City University of Hong Kong
-							<li>Guo Xiaoqing, City University of Hong Kong
 					</div>
 				</section>
 					</div>
