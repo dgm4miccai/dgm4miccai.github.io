@@ -321,7 +321,7 @@
             <section class="section">
                 <a name="keynote"></a>
                 <div class="container">
-                    <h2 class="title">Keynote Speaker</h2>
+                    <h2 class="title">Keynote{% if keynotes|length > 1 %}s{% endif %}</h2>
                     {% block keynote %}
                     {% endblock %}
                 </div>

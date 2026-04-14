@@ -1,5 +1,6 @@
 <div class="columns is-centered">
     <div class="column">
+        {% for keynote in keynotes %}
         <div class="box">
             <div class="columns is-mobile is-centered is-vcentered">
                 <div class="column is-3">
@@ -26,9 +27,8 @@
             <div class="columns is-mobile">
                 <div class="column is-9">
                     <small>
-                        <h4 class="subtitle"><b>TBA</b></h4>
-                        TBA
-
+                        <h4 class="subtitle"><b>{{keynote.title}}</b></h4>
+                        {{keynote.description}}
                     </small>
                 </div>
             </div>
@@ -39,5 +39,6 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
