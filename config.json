@@ -1,4 +1,12 @@
 {
+    "dgm4miccai": {
+        "year": 2026,
+        "timezone": "CEST",
+        "edition": 5
+    },
+    "timeline": {
+        "submissiondeadline": "19. of June 2026"
+    },
     "keynote": {
         "name": "Yannik Frisch, PhD",
         "affiliation": "Universitätsklinikum Heidelberg, Germany",
