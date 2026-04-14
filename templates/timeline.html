@@ -14,16 +14,16 @@
                     <td>{{timeline.submissiondeadline}}</td>
                 {% endif %}
             <tr>
-                <td>Review Due</td>
-                <td>03. July 2026</td>
+                <td>Reviews Due</td>
+                <td>{{timeline.reviewsdue}} {{dgm4miccai.year}}</td>
             <tr>
                 <td>Final Decision</td>
-                <td>07. July 2026</td>
+                <td>{{timeline.finaldecision}} {{dgm4miccai.year}}</td>
             <tr>
                 <td>Camera ready papers due</td>
-                <td>17. July 2026</td>
+                <td>{{timeline.cameraready}} {{dgm4miccai.year}}</td>
             <tr>
                 <td>DGM4MICCAI Workshop</td>
-                <td><a href="https://miccai.org">TBA</a></td>
+                <td><a href="https://miccai.org">{{dgm4miccai.date}} {{dgm4miccai.year}}</a></td>
         </table>
     </div>

@@ -3,11 +3,15 @@
         "announcement": "",
         "year": 2026,
         "timezone": "CEST",
-        "edition": 6
+        "edition": 6,
+        "date": "TBA"
     },
     "timeline": {
-        "submissiondeadline": "19. of June 2026",
-        "extendeddeadline": ""
+        "submissiondeadline": "19. June",
+        "extendeddeadline": "",
+        "reviewsdue": "03. July",
+        "finaldecision": "07. July",
+        "cameraready": "17. July"
     },
     "keynotes": [
         {
