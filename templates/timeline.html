@@ -1,29 +1,31 @@
-    <div class="table-container">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Event</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
+<div class="table-container">
+    <table class="table">
+        <thead>
             <tr>
-                <td>Paper Submission Deadline</td>
-                {% if timeline.extendeddeadline|length > 0 %}
-                    <td><s>{{timeline.submissiondeadline}}</s> <strong class="has-text-danger">extended to {{timeline.extendeddeadline}}</strong></td>
-                {% else %}
-                    <td>{{timeline.submissiondeadline}}</td>
-                {% endif %}
-            <tr>
-                <td>Reviews Due</td>
-                <td>{{timeline.reviewsdue}} {{dgm4miccai.year}}</td>
-            <tr>
-                <td>Final Decision</td>
-                <td>{{timeline.finaldecision}} {{dgm4miccai.year}}</td>
-            <tr>
-                <td>Camera ready papers due</td>
-                <td>{{timeline.cameraready}} {{dgm4miccai.year}}</td>
-            <tr>
-                <td>DGM4MICCAI Workshop</td>
-                <td><a href="https://miccai.org">{{dgm4miccai.date}} {{dgm4miccai.year}}</a></td>
-        </table>
-    </div>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Paper Submission Deadline</td>
+            {% if timeline.extendeddeadline|length > 0 %}
+            <td><s>{{timeline.submissiondeadline}}</s> <strong class="has-text-danger">extended to
+                    {{timeline.extendeddeadline}}</strong></td>
+            {% else %}
+            <td>{{timeline.submissiondeadline}}</td>
+            {% endif %}
+        <tr>
+            <td>Reviews Due</td>
+            <td>{{timeline.reviewsdue}} {{dgm4miccai.year}}</td>
+        <tr>
+            <td>Final Decision</td>
+            <td>{{timeline.finaldecision}} {{dgm4miccai.year}}</td>
+        <tr>
+            <td>Camera ready papers due</td>
+            <td>{{timeline.cameraready}} {{dgm4miccai.year}}</td>
+        <tr>
+            <td>DGM4MICCAI Workshop</td>
+            <td><a href="https://conferences.miccai.org/{{dgm4miccai.year}}/en/SATELLITE-EVENTS.html">{{dgm4miccai.date}}
+                    {{dgm4miccai.year}}</a></td>
+    </table>
+</div>
