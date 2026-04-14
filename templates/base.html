@@ -214,9 +214,11 @@
             <section class="hero is-primary">
                 <a name="submission"></a>
                 <div class="hero-body">
-                    <!-- <h2 class="title">
-						!!! Deadline extended to 1. July 2024, 11:59 PM Pacific Time !!!
-						</h2> -->
+                    {% if timeline.extendeddeadline|length > 0 %}
+                        <h2 class="title">
+                            !!! Deadline extended to {{timeline.extendeddeadline}}, 11:59 PM Pacific Time !!!
+                        </h2>
+                    {% endif %}
                     <!-- <h2 class="title">
 							Our <u>5th DGM4MICCAI Workshop</u> proposal has been accepted for #MICCAI2025!
 						</h2>
@@ -235,7 +237,6 @@
                     <!-- <h2 class="subtitle">
 							We are also excited to share that <u>hessian.AI</u> will be sponsoring two Best Paper Awards at the DGM4MICCAI 2025 workshop.
 						</h2> -->
-
                 </div>
             </section>
 
@@ -311,7 +312,7 @@
 
             <section class="section">
                 <a name="program"></a>
-
+                <h2 class="title">Program</h2>
                 <div class="content">
                     {% block program %}
                     {% endblock %}
@@ -338,7 +339,7 @@
                         <thead>
                             <tr>
                                 <th>Paper ID
-                                <th>Title <!-- <th>Authors<th>Time Slot -->
+                                <th>Title
                         </thead>
                         <!--<tr>
 							<td>29

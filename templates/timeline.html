@@ -8,7 +8,11 @@
             </thead>
             <tr>
                 <td>Paper Submission Deadline</td>
-                <td>{{timeline.submissiondeadline}}</td>
+                {% if timeline.extendeddeadline|length > 0 %}
+                    <td><s>{{timeline.submissiondeadline}}</s> <strong class="has-text-danger">extended to {{timeline.extendeddeadline}}</strong></td>
+                {% else %}
+                    <td>{{timeline.submissiondeadline}}</td>
+                {% endif %}
             <tr>
                 <td>Review Due</td>
                 <td>03. July 2026</td>
