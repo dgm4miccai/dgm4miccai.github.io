@@ -1,6 +1,7 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import os, sys
 import json
+import minify_html
 
 TEMPLATES_DIR = "templates"
 # common source filename candidates for index
@@ -44,6 +45,7 @@ with open("config.json", "r") as f:
     context = json.load(f)
 
 rendered = template.render(**context)
+rendered = minify_html.minify(rendered, minify_css=True, minify_js=True)
 
 out_path = "index.html"
 with open(out_path, "w", encoding="utf-8") as f:
