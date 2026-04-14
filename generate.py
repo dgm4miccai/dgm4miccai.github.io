@@ -1,13 +1,22 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import os, sys
+import json
 
 TEMPLATES_DIR = "templates"
 # common source filename candidates for index
-candidates = ["index.html.j2", "index.j2", "index.html.tpl", "index.tpl", "index.jinja2", "index.jinja", "index.html"]
+candidates = [
+    "index.html.j2",
+    "index.j2",
+    "index.html.tpl",
+    "index.tpl",
+    "index.jinja2",
+    "index.jinja",
+    "index.html",
+]
 
 env = Environment(
     loader=FileSystemLoader(TEMPLATES_DIR),
-    autoescape=select_autoescape(["html", "xml"])
+    autoescape=select_autoescape(["html", "xml"]),
 )
 
 # find first existing candidate template file
@@ -25,11 +34,14 @@ if not src_name:
             break
 
 if not src_name:
-    print("No template file found in templates/ to render for index.html", file=sys.stderr)
+    print(
+        "No template file found in templates/ to render for index.html", file=sys.stderr
+    )
     sys.exit(1)
 
 template = env.get_template(src_name)
-context = {}
+with open("config.json", "r") as f:
+    context = json.load(f)
 
 rendered = template.render(**context)
 
