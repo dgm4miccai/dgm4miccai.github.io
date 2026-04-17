@@ -22,20 +22,6 @@
             animation: fadein 2s;
         }
 
-        .column {
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        .sticky {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-        }
-
         @keyframes fadein {
             from {
                 opacity: 0;
@@ -79,12 +65,10 @@
 </head>
 
 <body>
-    <div class="columns">
-        <div class="column">
-            <div class="column is-10 is-centered">
-                <nav class="nav has-shadow">
-                    <div class="container">
-                        <input type="checkbox" id="menu-toggle" class="is-hidden" />
+    <nav class="nav has-shadow">
+        <div class="container">
+            <input type="checkbox" id="menu-toggle" class="is-hidden" />
+            <!--
                         <div class="nav-right nav-menu is-fixed-top">
                             <div class="card-image has-text-centered">
                                 <div class="column is-9 is-inline-block">
@@ -112,250 +96,192 @@
                                     <img src="images/regensburg_logo.png">
                                 </div>
                             </div>
-                            <!--<br>
-							<a class="twitter-timeline" data-width="250" data-height="275"
-								href="https://twitter.com/dgm4miccai?ref_src=twsrc%5Etfw">Tweets by dgm4miccai
-							</a>
-							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-							</script>-->
-                        </div>
-                    </div>
-                </nav>
+                        
+                        </div>-->
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight animation-fade">
+        <div class="hero-head">
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <img src="images/dgm4miccai{{dgm4miccai.year}}_logo.png" class="is-128x128 is-4by3">
+                <br>
+                <br>
+                <p class="title">
+                    DGM4MICCAI
+                </p>
+                <p class="subtitle">
+                    {{dgm4miccai.edition}}th Deep Generative Models Workshop @ MICCAI {{dgm4miccai.year}}
+                </p>
             </div>
         </div>
 
-        <div class="column is-10 is-offset-2">
-            <section class="hero is-fullheight animation-fade">
-                <div class="hero-head">
-                </div>
-
-                <div class="hero-body">
-                    <div class="container has-text-centered">
-                        <img src="images/dgm4miccai{{dgm4miccai.year}}_logo.png" class="is-128x128 is-4by3">
-                        <br>
-                        <br>
-                        <p class="title">
-                            DGM4MICCAI
-                        </p>
-                        <p class="subtitle">
-                            {{dgm4miccai.edition}}th Deep Generative Models Workshop @ MICCAI {{dgm4miccai.year}}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="hero-foot">
-                    <nav class="tabs is-boxed is-fullwidth">
-                        <div class="container">
-                            <ul>
-                                <li class="is-active"><a href="#overview">Overview</a>
-                                <li><a href="#timeline">Timeline</a>
-                                <li><a href="#submission">Submission Details</a>
-                                <li><a href="#program">Workshop Program</a>
-                                <li><a href="#keynote">Keynote Speakers</a>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-
-            <section class="section">
-                <a name="overview"></a>
-                <h2 class="title">Overview</h2>
-                <div class="content">
-                    <p>
-                        Deep generative models such as Diffusion Models, Generative Adversarial Networks (GANs)
-                        and Variational Auto-Encoders (VAEs) are currently receiving widespread attention from not
-                        only the computer vision and machine learning communities,
-                        but also in the MIC and CAI community.
-                        These models combine the advanced deep neural networks with classical
-                        density estimation (either explicit or implicit) for achieving state-of-the-art
-                        results.
-                        DGM4MICCAI workshop at <a href="https://miccai.org">MICCAI {{dgm4miccai.year}}</a>
-                        will be all about Deep Generative Models in Medical Image Computing
-                        and Computer Assisted Interventions.
-                    </p>
-
-                    <p>
-                        DGM4MICCAI Workshop Proceedings</a></u> are available via this <a
-                            href="https://link.springer.com/book/9783032054715">Springer Link.</a>
-                    </p>
-                </div>
-            </section>
-
-            {% if timeline.extendeddeadline|length > 0 %}
-            <section class="hero is-primary">
-                <div class="hero-body">
-                    <h2 class="title">
-                        !!! Deadline extended to {{timeline.extendeddeadline}}, 11:59 PM Pacific Time !!!
-                    </h2>
-                </div>
-            </section>
-            {% endif %}
-
-            {% if dgm4miccai.announcement %}
-            <section class="hero is-primary">
-                <a name="announcement"></a>
-                <div class="hero-body">
-                    <h2 class="title">
-                        {{ dgm4miccai.announcement }}
-                    </h2>
-                </div>
-            </section>
-            {% endif %}
-
-            <section class="section">
-                <a name="submission"></a>
-                <div class="content">
-                    <h3>Submission Details</h3>
-                    <p>
-                        The online submission for DGM4MICCAI is <b>open until {{timeline.submissiondeadline}}, 11:59 PM Pacific Time</b>.
-                        Contributions must be submitted online through the <a
-                            href="https://cmt3.research.microsoft.com/DGM4MICCAI2026">CMT submission system</a>.
-                    </p>
-                    <p>
-                        We seek contributions that include, but are not limited to:
-                    <ul>
-                        <li>Novel architectures, loss functions, and theoretical developments for:
-                            <ul>
-                                <li>Stable Diffusion Models
-                                <li>Causal generative models
-                                <li>Neural Cellular Automata
-                                <li>GANs and Adversarial Learning
-                                <li>Variational Auto-Encoder
-                                <li>Disentanglement
-                                <li>Flow
-                                <li>Autoregressive models
-                        <li>Multi-Modality and Cross-Modality linking
-                        <li>Novel metrics and uncertainty estimates for performance assessment and interpretability of
-                            generative models
-                        <li>Generative models under limited, sparse and noisy image inputs
-                        <li>Supervised and Unsupervised Domain Adaptation, Transfer Learning and Multi-Task Learning
-                        <li>Segmentation, Detection, Synthesis, Reconstruction, Denoising, Supersampling, Registration
-                        <li>Image-to-Image translation for Synthetic Training Data Generation or Augmented Reality
-                        <li>Neural Rendering
-                    </ul>
-                    </p>
-                    <p>
-                        We particularly welcome papers driven by the theme "MIC meets CAI".
-                        Interesting novel applications of deep generative models in MIC and CAI beyond these topics are
-                        also welcome.
-                    </p>
-
-                    <p>
-                        Workshop proceedings are published as part of Springer Nature's Lecture Notes in Computer
-                        Science (LNCS) series.
-                        Manuscripts will be reviewed in double-blinded peer-review.
-
-                        Please prepare your workshop papers according to the
-                        <a
-                            href="https://conferences.miccai.org/2025/en/PAPER-SUBMISSION-GUIDELINES.html#manuscriptpreparation">
-                            MICCAI submission guidelines
-                        </a> (LNCS template, 8 pages maximum).<br>
-                        Supplementary material: PDF documents or mp4 videos, 10 MB maximum file size.
-                    </p>
-
-                    <p>
-                        <b>Reviewing Responsibility: At least one co-author must volunteer to review for DGM4MICCAI
-                            {{dgm4miccai.year}}. The submission form will request the name and email address of the qualified co-author
-                            nominated for reviewing duties.</b>
-                    </p>
-                </div>
-            </section>
-
-
-            <section class="section">
-                <a name="timeline"></a>
-                <h2 class="title">Timeline</h2>
-                <div class="content">
-                    {% block timeline %}
-                    {% endblock %}
-                </div>
-            </section>
-
-            <section class="section">
-                <a name="program"></a>
-                <h2 class="title">Program</h2>
-                <div class="content">
-                    {% block program %}
-                    {% endblock %}
-                </div>
-            </section>
-
-            <section class="section">
-                <a name="keynote"></a>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
                 <div class="container">
-                    <h2 class="title">Keynote{% if keynotes|length > 1 %}s{% endif %}</h2>
-                    {% block keynote %}
-                    {% endblock %}
+                    <ul>
+                        <li class="is-active"><a href="#overview">Overview</a>
+                        <li><a href="#timeline">Timeline</a>
+                        <li><a href="#submission">Submission Details</a>
+                        <li><a href="#program">Workshop Program</a>
+                        <li><a href="#keynote">Keynote Speakers</a>
+                    </ul>
                 </div>
-            </section>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <a name="overview"></a>
+        <h2 class="title">Overview</h2>
+        <div class="content">
+            <p>
+                Deep generative models such as Diffusion Models, Generative Adversarial Networks (GANs)
+                and Variational Auto-Encoders (VAEs) are currently receiving widespread attention from not
+                only the computer vision and machine learning communities,
+                but also in the MIC and CAI community.
+                These models combine the advanced deep neural networks with classical
+                density estimation (either explicit or implicit) for achieving state-of-the-art
+                results.
+                DGM4MICCAI workshop at <a href="https://miccai.org">MICCAI {{dgm4miccai.year}}</a>
+                will be all about Deep Generative Models in Medical Image Computing
+                and Computer Assisted Interventions.
+            </p>
+
+            <p>
+                DGM4MICCAI Workshop Proceedings</a></u> are available via this <a
+                    href="https://link.springer.com/book/9783032054715">Springer Link.</a>
+            </p>
+        </div>
+    </section>
+
+    {% if timeline.extendeddeadline|length > 0 %}
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <h2 class="title">
+                !!! Deadline extended to {{timeline.extendeddeadline}}, 11:59 PM Pacific Time !!!
+            </h2>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if dgm4miccai.announcement %}
+    <section class="hero is-primary">
+        <a name="announcement"></a>
+        <div class="hero-body">
+            <h2 class="title">
+                {{ dgm4miccai.announcement }}
+            </h2>
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="section">
+        <a name="submission"></a>
+        <div class="content">
+            <h3>Submission Details</h3>
+            {% block submission %}
+            {% endblock %}
+        </div>
+    </section>
 
 
-            <section class="section">
-                <a name="oral" , id="oral_sessions"></a>
-                <h2 class="title">Oral Sessions</h2>
-                <div class="content">
-                    <a id="oral_sessions_l"></a>
-                    <h3 class="title">Long Orals 1</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Paper ID
-                                <th>Title
-                        </thead>
-                        <!--<tr>
+    <section class="section">
+        <a name="timeline"></a>
+        <h2 class="title">Timeline</h2>
+        <div class="content">
+            {% block timeline %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <section class="section">
+        <a name="program"></a>
+        <h2 class="title">Program</h2>
+        <div class="content">
+            {% block program %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <section class="section">
+        <a name="keynote"></a>
+        <div class="container">
+            <h2 class="title">Keynote{% if keynotes|length > 1 %}s{% endif %}</h2>
+            {% block keynote %}
+            {% endblock %}
+        </div>
+    </section>
+
+
+    <section class="section">
+        <a name="oral" , id="oral_sessions"></a>
+        <h2 class="title">Oral Sessions</h2>
+        <div class="content">
+            <a id="oral_sessions_l"></a>
+            <h3 class="title">Long Orals 1</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Paper ID
+                        <th>Title
+                </thead>
+                <!--<tr>
 							<td>29
 							<td>fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting-->
-                    </table>
+            </table>
 
-                    <a id="oral_sessions_s"></a>
-                    <h3 class="title">Short Orals 1</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Paper ID
-                                <th>Title <!-- <th>Authors  <th>Time Slot -->
-                        </thead>
+            <a id="oral_sessions_s"></a>
+            <h3 class="title">Short Orals 1</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Paper ID
+                        <th>Title <!-- <th>Authors  <th>Time Slot -->
+                </thead>
 
-                        <!--<tr>
+                <!--<tr>
 							<td>4
 							<td>Robust Noisy Pseudo-label Learning for Semi-supervised Medical Image Segmentation Using
 								Diffusion Model-->
 
-                    </table>
+            </table>
 
-                    <a id="oral_sessions_l"></a>
-                    <h3 class="title">Long Orals 2</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Paper ID
-                                <th>Title <!-- <th>Authors<th>Time Slot -->
-                        </thead>
-                        <!--<tr>
+            <a id="oral_sessions_l"></a>
+            <h3 class="title">Long Orals 2</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Paper ID
+                        <th>Title <!-- <th>Authors<th>Time Slot -->
+                </thead>
+                <!--<tr>
 							<td>34
 							<td>Leveraging Adversarial Learning for Pathological Fidelity in Virtual Staining
 							-->
-                    </table>
+            </table>
 
-                    <a id="oral_sessions_s"></a>
-                    <h3 class="title">Short Orals 2</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Paper ID
-                                <th>Title <!-- <th>Authors  <th>Time Slot -->
-                        </thead>
-                        <!--<tr>
+            <a id="oral_sessions_s"></a>
+            <h3 class="title">Short Orals 2</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Paper ID
+                        <th>Title <!-- <th>Authors  <th>Time Slot -->
+                </thead>
+                <!--<tr>
 							<td>36
 							<td>EchoAdapter: Adapting Pretrained Image Diffusion Models for Cardiac Ultrasound Video
 								Generation
 							-->
 
-                    </table>
+            </table>
 
 
-                    <!-- <h3 class="title">AdaptOR Papers</h3>
+            <!-- <h3 class="title">AdaptOR Papers</h3>
 							<table class="table">
 								<thead>
 									<tr>
@@ -368,115 +294,104 @@
 								<td>27<td>Cross-domain Landmarks Detection in Mitral Regurgitation<td>Wang, Jiacheng; Wang, Haojie; Mu, Ruochen; Wang, Liansheng*
 						</table> -->
 
-                </div>
-            </section>
-
-
-            <footer class="footer">
-
-                <div class="columns">
-                    <div class="column">
-                        <section class="section">
-                            <a name="keynote"></a>
-                            <h2 class="title">Organizing Committee</h2>
-                            <div class="container content">
-                                <ul>
-                                    <li>Anirban Mukhopadhyay, TU Darmstadt, Germany
-                                    <li>Sandy Engelhardt, Heidelberg University, Germany
-                                    <li>Ilkay Oksuz, Istanbul Technical University, Turkey
-                                    <li>Dorit Merhof, Universität Regensburg, Germany
-                                    <li>Yixuan Yuan, Chinese University of Hong Kong, China
-                                </ul>
-
-                                Student organizers:
-                                <ul>
-                                    <li>Lalith Sharan, University Hospital Heidelberg, Germany
-                                    <li>Henry Krumb, TU Darmstadt, Germany
-                                    <li>Yannik Frisch, University Hospital Heidelberg, Germany
-                                    <li>Ssharvien Kumar Sivakumar, TU Darmstadt, Germany
-                                    <li>Caner Özer, Istanbul Technical University, Turkey
-                                    <li>Aniek Eijpe, Utrecht University, Netherlands
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="column">
-                        <section class="section">
-                            <h2 class="title">Award Chairs</h2>
-                            <div class="container content">
-                                <ul>
-                                    <li>Camila González, Stanford University, USA
-                                    <li>Salman Ul Hussain Dar, Heidelberg University Hospital, Germany
-                                    <li>Moritz Fuchs, Roberst Bosch Krankenhaus, Stuttgart, Germany
-                                    <li>Amin Ranem, TU Darmstadt, Germany
-                                    <li>John Kalkhof, INRIA Sophia Antipolis, France
-                                </ul>
-                            </div>
-                            <h2 class="title">Program Committee</h2>
-                            <div class="container content">
-                                <ul>
-                                    <li>Li Wang, University of Texas at Arlington, USA
-                                    <li>Tong Zhang , Peng Cheng Laboratory, Shenzhen, China
-                                    <li>Ping Lu, Oxford University, UK
-                                    <li>Roxane Licandro, Medical University of Vienna, Austria
-                                    <li>Veronika Zimmer, TU Muenchen, Germany
-                                    <li>Dwarikanath Mahapatra, Inception Institute of AI, UAE
-                                    <li>Michael Sdika, CREATIS Lyon, France
-                                    <li>Jelmer Wolterink, Univ. of Twente, The Netherlands
-                                    <li>Subhamoy Mandal, IIT Kharagpur, India
-                                    <li>Alejandro Granados, King's College London, UK
-                                    <li>Jinglei Lv, The University of Sydney, Australia
-                                    <li>Onat Dalmaz, Bilkent University, Turkey
-                                    <li>Magda Paschali, Stanford University, USA
-                                    <li>Qiang Zhang, Oxford University, UK
-                                    <li>Abdullah-al-Zubaer Imran, University of Kentucky, USA
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <div class="content has-text-centered">
-                            <strong>Contact:</strong><br>
-                            anirban.mukhopadhyay[at]tu-darmstadt.de
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content has-text-centered">
-                            <a href="https://www.linkedin.com/company/dgm4miccai">
-                                <i data-feather="linkedin"></i>
-                                <br>
-                                Follow us on LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content has-text-centered">
-                            <a href="https://twitter.com/dgm4miccai">
-                                <i data-feather="twitter"></i>
-                                <br>
-                                Follow us on Twitter
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content has-text-centered">
-                            <a rel="me" href="https://sigmoid.social/@dgm4miccai">
-                                <!-- <i data-feather="twitter"></i> -->
-                                <br>
-                                Mastodon</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            <script>
-                feather.replace()
-            </script>
         </div>
-    </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="columns">
+            <div class="column">
+                <section class="section">
+                    <a name="keynote"></a>
+                    <h2 class="title">Organizing Committee</h2>
+                    <div class="container content">
+                        <ul>
+                            <li>Anirban Mukhopadhyay, TU Darmstadt, Germany
+                            <li>Sandy Engelhardt, Heidelberg University, Germany
+                            <li>Ilkay Oksuz, Istanbul Technical University, Turkey
+                            <li>Dorit Merhof, Universität Regensburg, Germany
+                            <li>Yixuan Yuan, Chinese University of Hong Kong, China
+                        </ul>
+
+                        Student organizers:
+                        <ul>
+                            <li>Lalith Sharan, University Hospital Heidelberg, Germany
+                            <li>Henry Krumb, TU Darmstadt, Germany
+                            <li>Yannik Frisch, University Hospital Heidelberg, Germany
+                            <li>Ssharvien Kumar Sivakumar, TU Darmstadt, Germany
+                            <li>Caner Özer, Istanbul Technical University, Turkey
+                            <li>Aniek Eijpe, Utrecht University, Netherlands
+                    </div>
+                </section>
+            </div>
+
+            <div class="column">
+                <section class="section">
+                    <h2 class="title">Award Chairs</h2>
+                    <div class="container content">
+                        <ul>
+                            <li>Camila González, Stanford University, USA
+                            <li>Salman Ul Hussain Dar, Heidelberg University Hospital, Germany
+                            <li>Moritz Fuchs, Roberst Bosch Krankenhaus, Stuttgart, Germany
+                            <li>Amin Ranem, TU Darmstadt, Germany
+                            <li>John Kalkhof, INRIA Sophia Antipolis, France
+                        </ul>
+                    </div>
+                    <h2 class="title">Program Committee</h2>
+                    <div class="container content">
+                        <ul>
+                            <li>Li Wang, University of Texas at Arlington, USA
+                            <li>Tong Zhang , Peng Cheng Laboratory, Shenzhen, China
+                            <li>Ping Lu, Oxford University, UK
+                            <li>Roxane Licandro, Medical University of Vienna, Austria
+                            <li>Veronika Zimmer, TU Muenchen, Germany
+                            <li>Dwarikanath Mahapatra, Inception Institute of AI, UAE
+                            <li>Michael Sdika, CREATIS Lyon, France
+                            <li>Jelmer Wolterink, Univ. of Twente, The Netherlands
+                            <li>Subhamoy Mandal, IIT Kharagpur, India
+                            <li>Alejandro Granados, King's College London, UK
+                            <li>Jinglei Lv, The University of Sydney, Australia
+                            <li>Onat Dalmaz, Bilkent University, Turkey
+                            <li>Magda Paschali, Stanford University, USA
+                            <li>Qiang Zhang, Oxford University, UK
+                            <li>Abdullah-al-Zubaer Imran, University of Kentucky, USA
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr>
+        <div class="columns">
+            <div class="column">
+                <div class="content has-text-centered">
+                    <strong>Contact:</strong><br>
+                    anirban.mukhopadhyay[at]tu-darmstadt.de
+                </div>
+            </div>
+            <div class="column">
+                <div class="content has-text-centered">
+                    <a href="https://www.linkedin.com/company/dgm4miccai">
+                        <i data-feather="linkedin"></i>
+                        <br>
+                        Follow us on LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content has-text-centered">
+                    <a rel="me" href="https://sigmoid.social/@dgm4miccai">
+                        <!-- <i data-feather="twitter"></i> -->
+                        <br>
+                        Mastodon</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>

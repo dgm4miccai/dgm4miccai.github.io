@@ -45,7 +45,7 @@ with open("config.json", "r") as f:
     context = json.load(f)
 
 rendered = template.render(**context)
-rendered = minify_html.minify(rendered, minify_css=True, minify_js=True)
+#rendered = minify_html.minify(rendered, minify_css=True, minify_js=False)
 
 out_path = "index.html"
 with open(out_path, "w", encoding="utf-8") as f:
