@@ -24,5 +24,47 @@
             "title": "TITLE TBA",
             "description": "DESCRIPTION TBA"
         }
+    ],
+    "sessions": [
+        {
+            "identifier": "oral_sessions_l1",
+            "title": "Long Orals 1",
+            "papers": [
+                {
+                    "id": "TBA",
+                    "title": "TBA"
+                }
+            ]
+        },
+        {
+            "identifier": "oral_sessions_s1",
+            "title": "Short Orals 1",
+            "papers": [
+                {
+                    "id": "TBA",
+                    "title": "TBA"
+                }
+            ]
+        },
+        {
+            "identifier": "oral_sessions_l2",
+            "title": "Long Orals 2",
+            "papers": [
+                {
+                    "id": "TBA",
+                    "title": "TBA"
+                }
+            ]
+        },
+        {
+            "identifier": "oral_sessions_s2",
+            "title": "Short Orals 2",
+            "papers": [
+                {
+                    "id": "TBA",
+                    "title": "TBA"
+                }
+            ]
+        }
     ]
 }
