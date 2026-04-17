@@ -134,99 +134,102 @@
         </div>
     </section>
 
-    <section class="section">
-        <a name="overview"></a>
-        <h2 class="title">Overview</h2>
-        <div class="content">
-            {% block overview %}
-            {% endblock %}
-        </div>
-    </section>
+    <div class="columns is-centered">
+        <div class="column is-half-desktop">
+            <section class="section">
+                <a name="overview"></a>
+                <h2 class="title">Overview</h2>
+                <div class="content">
+                    {% block overview %}
+                    {% endblock %}
+                </div>
+            </section>
 
-    {% if timeline.extendeddeadline|length > 0 %}
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <h2 class="title">
-                !!! Deadline extended to {{timeline.extendeddeadline}}, 11:59 PM Pacific Time !!!
-            </h2>
-        </div>
-    </section>
-    {% endif %}
+            {% if timeline.extendeddeadline|length > 0 %}
+            <section class="hero is-primary">
+                <div class="hero-body">
+                    <h2 class="title">
+                        !!! Deadline extended to {{timeline.extendeddeadline}}, 11:59 PM Pacific Time !!!
+                    </h2>
+                </div>
+            </section>
+            {% endif %}
 
-    {% if dgm4miccai.announcement %}
-    <section class="hero is-primary">
-        <a name="announcement"></a>
-        <div class="hero-body">
-            <h2 class="title">
-                {{ dgm4miccai.announcement }}
-            </h2>
-        </div>
-    </section>
-    {% endif %}
+            {% if dgm4miccai.announcement %}
+            <section class="hero is-primary">
+                <a name="announcement"></a>
+                <div class="hero-body">
+                    <h2 class="title">
+                        {{ dgm4miccai.announcement }}
+                    </h2>
+                </div>
+            </section>
+            {% endif %}
 
-    <section class="section">
-        <a name="submission"></a>
-        <div class="content">
-            <h3>Submission Details</h3>
-            {% block submission %}
-            {% endblock %}
-        </div>
-    </section>
-
-
-    <section class="section">
-        <a name="timeline"></a>
-        <h2 class="title">Timeline</h2>
-        <div class="content">
-            {% block timeline %}
-            {% endblock %}
-        </div>
-    </section>
-
-    <section class="section">
-        <a name="program"></a>
-        <h2 class="title">Program</h2>
-        <div class="content">
-            {% block program %}
-            {% endblock %}
-        </div>
-    </section>
-
-    <section class="section">
-        <a name="keynote"></a>
-        <div class="container">
-            <h2 class="title">Keynote{% if keynotes|length > 1 %}s{% endif %}</h2>
-            {% block keynote %}
-            {% endblock %}
-        </div>
-    </section>
+            <section class="section">
+                <a name="submission"></a>
+                <div class="content">
+                    <h3>Submission Details</h3>
+                    {% block submission %}
+                    {% endblock %}
+                </div>
+            </section>
 
 
-    <section class="section">
-        <a name="oral" , id="oral_sessions"></a>
-        <h2 class="title">Oral Sessions</h2>
-        <div class="content">
-            {% for session in sessions %}
-            <a id="{{session.identifier}}"></a>
-            <h3 class="title">{{session.title}}</h3>
-            <table class="table">
-                <thead>
-                    <th>Paper ID</th>
-                    <th>Title</th>
-                </thead>
-                <tbody>
-                    {% for paper in session.papers %}
-                    <tr>
-                        <td>{{paper.id}}</td>
-                        <td>{{paper.title}}</td>
-                    </tr>
+            <section class="section">
+                <a name="timeline"></a>
+                <h2 class="title">Timeline</h2>
+                <div class="content">
+                    {% block timeline %}
+                    {% endblock %}
+                </div>
+            </section>
+
+            <section class="section">
+                <a name="program"></a>
+                <h2 class="title">Program</h2>
+                <div class="content">
+                    {% block program %}
+                    {% endblock %}
+                </div>
+            </section>
+
+            <section class="section">
+                <a name="keynote"></a>
+                <div class="container">
+                    <h2 class="title">Keynote{% if keynotes|length > 1 %}s{% endif %}</h2>
+                    {% block keynote %}
+                    {% endblock %}
+                </div>
+            </section>
+
+
+            <section class="section">
+                <a name="oral" , id="oral_sessions"></a>
+                <h2 class="title">Oral Sessions</h2>
+                <div class="content">
+                    {% for session in sessions %}
+                    <a id="{{session.identifier}}"></a>
+                    <h3 class="title">{{session.title}}</h3>
+                    <table class="table">
+                        <thead>
+                            <th>Paper ID</th>
+                            <th>Title</th>
+                        </thead>
+                        <tbody>
+                            {% for paper in session.papers %}
+                            <tr>
+                                <td>{{paper.id}}</td>
+                                <td>{{paper.title}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                     {% endfor %}
-                </tbody>
-            </table>
-            {% endfor %}
+                </div>
+            </section>
         </div>
-    </section>
-
+    </div>
 
     <footer class="footer">
         <div class="columns">
