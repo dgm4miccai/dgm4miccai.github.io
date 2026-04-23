@@ -1,70 +1,73 @@
 {
-    "dgm4miccai": {
-        "announcement": "",
-        "year": 2026,
-        "timezone": "CEST",
-        "edition": 6,
-        "date": "TBA"
-    },
-    "timeline": {
-        "submissiondeadline": "19. June",
-        "extendeddeadline": "",
-        "reviewsdue": "03. July",
-        "finaldecision": "07. July",
-        "cameraready": "17. July"
-    },
-    "keynotes": [
-        {
-            "name": "Yannik Frisch, PhD",
-            "affiliation": "Universitätsklinikum Heidelberg, Germany",
-            "group": "Institute for Artificial Intelligence in Cardiovascular Medicine",
-            "linkedin": "https://www.linkedin.com/in/yannikfrisch",
-            "url": "https://www.klinikum.uni-heidelberg.de/personen/yannik-frisch-15331/",
-            "picture": "images/Frisch_Yannik.jpg",
-            "title": "TITLE TBA",
-            "description": "DESCRIPTION TBA"
-        }
-    ],
-    "sessions": [
-        {
-            "identifier": "oral_sessions_l1",
-            "title": "Long Orals 1",
-            "papers": [
-                {
-                    "id": "TBA",
-                    "title": "TBA"
-                }
-            ]
+    "spreadsheet_path": "DGM4MICCAI26 Orga Spreadsheet.xlsx",
+    "context": {
+        "dgm4miccai": {
+            "announcement": "",
+            "year": 2026,
+            "timezone": "CEST",
+            "edition": 6,
+            "date": "TBA"
         },
-        {
-            "identifier": "oral_sessions_s1",
-            "title": "Short Orals 1",
-            "papers": [
-                {
-                    "id": "TBA",
-                    "title": "TBA"
-                }
-            ]
+        "timeline": {
+            "submissiondeadline": "19. June",
+            "extendeddeadline": "",
+            "reviewsdue": "03. July",
+            "finaldecision": "07. July",
+            "cameraready": "17. July"
         },
-        {
-            "identifier": "oral_sessions_l2",
-            "title": "Long Orals 2",
-            "papers": [
-                {
-                    "id": "TBA",
-                    "title": "TBA"
-                }
-            ]
-        },
-        {
-            "identifier": "oral_sessions_s2",
-            "title": "Short Orals 2",
-            "papers": [
-                {
-                    "id": "TBA",
-                    "title": "TBA"
-                }
-            ]
-        }
-    ]
+        "keynotes": [
+            {
+                "name": "Yannik Frisch, PhD",
+                "affiliation": "Universitätsklinikum Heidelberg, Germany",
+                "group": "Institute for Artificial Intelligence in Cardiovascular Medicine",
+                "linkedin": "https://www.linkedin.com/in/yannikfrisch",
+                "url": "https://www.klinikum.uni-heidelberg.de/personen/yannik-frisch-15331/",
+                "picture": "images/Frisch_Yannik.jpg",
+                "title": "TITLE TBA",
+                "description": "DESCRIPTION TBA"
+            }
+        ],
+        "sessions": [
+            {
+                "identifier": "oral_sessions_l1",
+                "title": "Long Orals 1",
+                "papers": [
+                    {
+                        "id": "TBA",
+                        "title": "TBA"
+                    }
+                ]
+            },
+            {
+                "identifier": "oral_sessions_s1",
+                "title": "Short Orals 1",
+                "papers": [
+                    {
+                        "id": "TBA",
+                        "title": "TBA"
+                    }
+                ]
+            },
+            {
+                "identifier": "oral_sessions_l2",
+                "title": "Long Orals 2",
+                "papers": [
+                    {
+                        "id": "TBA",
+                        "title": "TBA"
+                    }
+                ]
+            },
+            {
+                "identifier": "oral_sessions_s2",
+                "title": "Short Orals 2",
+                "papers": [
+                    {
+                        "id": "TBA",
+                        "title": "TBA"
+                    }
+                ]
+            }
+        ]
+    }
 }

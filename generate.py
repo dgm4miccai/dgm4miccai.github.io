@@ -1,7 +1,11 @@
-from jinja2 import Environment, FileSystemLoader, select_autoescape
-import os, sys
 import json
+import os
+import sys
+
+import click
 import minify_html
+import openpyxl
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 TEMPLATES_DIR = "templates"
 # common source filename candidates for index
@@ -42,13 +46,25 @@ if not src_name:
 
 template = env.get_template(src_name)
 with open("config.json", "r") as f:
-    context = json.load(f)
+    config = json.load(f)
+
+context = config["context"]
+
+xlsx_path = config.get("spreadsheet_path")
+if xlsx_path is not None:
+    wb = openpyxl.load_workbook(xlsx_path)
+    ws = wb["Paper-Presenter"]
+    presenters = []
+    for row in ws.iter_rows(min_row=2, max_col=4, max_row=25, values_only=True):
+        paper_id, paper_title, _, presenter_name = row
+        # TODO add these to corresponding session
+
 
 rendered = template.render(**context)
-#rendered = minify_html.minify(rendered, minify_css=True, minify_js=False)
+# rendered = minify_html.minify(rendered, minify_css=True, minify_js=False)
 
 out_path = "index.html"
 with open(out_path, "w", encoding="utf-8") as f:
     f.write(rendered)
 
-print(f"Rendered {src_name} -> {out_path}")
+click.secho(f"Rendered {src_name} -> {out_path}", fg="green")
