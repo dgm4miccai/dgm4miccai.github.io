@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from pathlib import Path
 
 import click
 import minify_html
@@ -51,10 +52,9 @@ with open("config.json", "r") as f:
 context = config["context"]
 
 xlsx_path = config.get("spreadsheet_path")
-if xlsx_path is not None:
+if xlsx_path is not None and Path(xlsx_path).exists():
     wb = openpyxl.load_workbook(xlsx_path)
     ws = wb["Paper-Presenter"]
-    presenters = []
     for row in ws.iter_rows(min_row=2, max_col=4, max_row=25, values_only=True):
         paper_id, paper_title, _, presenter_name = row
         # TODO add these to corresponding session
