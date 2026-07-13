@@ -217,6 +217,14 @@
                 <h2 class="title">Timeline</h2>
                 <div class="content">
                     
+<style>
+    .passed-event {
+        text-decoration: line-through;
+        color: #888;
+    }
+</style>
+
+
 <div class="table-container">
     <table class="table">
         <thead>
@@ -228,23 +236,53 @@
         <tr>
             <td>Paper Submission Deadline</td>
             
-            <td>19. June</td>
+            <td class="parse-date">19. June 2026</td>
             
         <tr>
             <td>Reviews Due</td>
-            <td>03. July 2026</td>
+            <td class="parse-date">03. July 2026</td>
         <tr>
             <td>Final Decision</td>
-            <td>07. July 2026</td>
+            <td class="parse-date">07. July 2026</td>
         <tr>
             <td>Camera ready papers due</td>
-            <td>17. July 2026</td>
+            <td class="parse-date">20. July 2026</td>
         <tr>
             <td>DGM4MICCAI Workshop</td>
-            <td><a href="https://conferences.miccai.org/2026/en/SATELLITE-EVENTS.html">01. October
-                    2026</a></td>
+            <td class="parse-date">
+                <a href="https://conferences.miccai.org/2026/en/SATELLITE-EVENTS.html">01. October
+                    2026
+                </a>
+            </td>
     </table>
 </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    //
+    // Helper script to cross-out passed events
+    //
+    // Gets today's date and sets the time to midnight for accurate day-to-day comparison.
+    // Then looks for all elements taged with 'parse-date'.
+    //
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const dateCells = document.querySelectorAll(".parse-date");
+
+    dateCells.forEach(cell => {
+        
+        const eventDate = new Date(cell.textContent.trim());
+
+        if (!isNaN(eventDate) && eventDate < today) {
+            cell.closest("tr").classList.add("passed-event");
+        }
+    });
+});
+</script>
 
                 </div>
             </section>
