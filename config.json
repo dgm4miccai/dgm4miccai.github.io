@@ -29,42 +29,90 @@
         ],
         "sessions": [
             {
-                "identifier": "oral_sessions_l1",
-                "title": "Long Orals 1",
+                "identifier": "oral_sessions_s",
+                "title": "Short Orals",
                 "papers": [
                     {
-                        "id": "TBA",
-                        "title": "TBA"
+                        "id": "7",
+                        "title": "Making Sparse Labels Reliable: Validity-gated ROI Guidance for Medical Image Generation with Conditional Latent Diffusion Model"
+                    },
+                    {
+                        "id": "11",
+                        "title": "Weakly Supervised Lung Nodule Segmentation via Plug-and-Play Guidance of 3D Rectified Flow"
+                    },
+                    {
+                        "id": "12",
+                        "title": "Patient-Adaptive Modality Attention for Multimodal Brain Tumor Synthesis via Latent Diffusion"
+                    },
+                    {
+                        "id": "23",
+                        "title": "Diffusion-Based Synthesis of Complete 3D Biparametric Prostate MRI"
+                    },
+                    {
+                        "id": "24",
+                        "title": "2D Versus 3D Diffusion for In Silico Training of Interventional X-ray AI Models"
+                    },
+                    {
+                        "id": "25",
+                        "title": "Large-Volume Conditioned 3D Latent Diffusion Models for CT Metal Artifact Suppression"
+                    },
+                    {
+                        "id": "27",
+                        "title": "Generation of Breast Tumors' Shear Wave Elastography Images from Corresponding Ultrasound Images with US2SWEdiff"
+                    },
+                    {
+                        "id": "28",
+                        "title": "LaST-Diff: Latent Spatiotemporal Diffusion for Temporally Stable Echocardiography Video Segmentation"
                     }
                 ]
             },
             {
-                "identifier": "oral_sessions_s1",
-                "title": "Short Orals 1",
+                "identifier": "oral_sessions_l",
+                "title": "Long Orals",
                 "papers": [
                     {
-                        "id": "TBA",
-                        "title": "TBA"
-                    }
-                ]
-            },
-            {
-                "identifier": "oral_sessions_l2",
-                "title": "Long Orals 2",
-                "papers": [
+                        "id": "3",
+                        "title": "From Sparse X-rays to 3D CT: Training-Free Reconstruction with Diffusion Priors"
+                    },
                     {
-                        "id": "TBA",
-                        "title": "TBA"
-                    }
-                ]
-            },
-            {
-                "identifier": "oral_sessions_s2",
-                "title": "Short Orals 2",
-                "papers": [
+                        "id": "6",
+                        "title": "FedDSR: Codebook-Based Distribution Alignment for Heterogeneous Federated CT Super-Resolution"
+                    },
                     {
-                        "id": "TBA",
-                        "title": "TBA"
+                        "id": "8",
+                        "title": "PCaPaint: Prostate Cancer Inpainting by Mitigating Shortcut Learning"
+                    },
+                    {
+                        "id": "9",
+                        "title": "A Unified Latent Diffusion for High-Fidelity Any-to-Any Brain Modality Synthesis"
+                    },
+                    {
+                        "id": "10",
+                        "title": "When the Edit Changes the Patient: Measuring Identity Preservation in Counterfactual Retinal Images"
+                    },
+                    {
+                        "id": "13",
+                        "title": "Recovering Progression Beyond the Identity Shortcut: A Schrödinger Bridge Framework for Longitudinal Brain-MRI"
+                    },
+                    {
+                        "id": "14",
+                        "title": "Disentangled Retinal Fundus Synthesis with Non-Circular Vessel-Topology Evaluation"
+                    },
+                    {
+                        "id": "17",
+                        "title": "Feature-Space Guided Diffusion for Realistic Ultrasound Image Synthesis"
+                    },
+                    {
+                        "id": "20",
+                        "title": "Leveraging Multi-Representation Features from Diffusion Models for Unsupervised 3D Medical Image Segmentation"
+                    },
+                    {
+                        "id": "21",
+                        "title": "Unpaired D-FF-OCT-to-Histopathology Translation for Rapid Kidney Biopsy Visualization"
+                    },
+                    {
+                        "id": "22",
+                        "title": "Synthetic Data Generation for Automated Hair Instance Segmentation in Trichoscopy"
                     }
                 ]
             }
